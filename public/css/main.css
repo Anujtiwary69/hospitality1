@@ -25,7 +25,13 @@
     font-weight: normal;
     font-style: normal;
 }
-/* Optional Global Font Application */
+
+/*
+ Optional Global Font Application
+*/
+html {
+    scroll-behavior: smooth;
+}
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -45,9 +51,7 @@ li,h1,h2,h3,h4,h5,h6,p{
 
 
 .primary-button{
-    width: 150px;
-    height: 55px;
-    border-radius: 0px;
+    border-radius: 0;
     height: 79px;
     width: 160px;
 }
@@ -136,7 +140,7 @@ li,h1,h2,h3,h4,h5,h6,p{
     text-align: justify-all;
 }
 .slide-bottom{
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .dateContainer,.feildContainer{
@@ -145,3 +149,56 @@ li,h1,h2,h3,h4,h5,h6,p{
 /*.checkRateButton{*/
 /*    width: 100% !important;*/
 /*}*/
+
+.border-button{
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.75;
+    text-transform: uppercase;
+    min-width: 64px;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: #d81b60;
+    font-family: "Reforma 1969", "AXtManalBold Regular", Helvetica, Arial, "Microsoft Yahei", "PingFang SC", "PingFang TC", "PingFang HK", "Hiragino Sans", sans-serif;
+    font-size: 1rem;
+    border: 0 #d81b60;
+}
+
+.primary-button1{
+    flex: 1;
+    padding: 10px;
+    background-color: #d81b60;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+

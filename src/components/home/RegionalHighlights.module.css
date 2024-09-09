@@ -1,0 +1,38 @@
+.container {
+    text-align: center;
+    background-color: #0c2e4a; /* Blue background */
+    padding: 40px 0;
+    color: white;
+}
+
+
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    color: #333;
+}
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.image {
+    background-color: #e91e63; /* Pink background for images */
+    height: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+

@@ -2,14 +2,51 @@ import React from 'react';
 
 const Hero: React.FC = () => {
     return (
-        <div className="hero-banner ">
-            <div className="overlay ">
-                <div className="hero-text ">
-                    <h1 className="tracking-in-expand">GRAND CHORTOQ RESORT</h1>
-                    <p>UZBEKISTAN</p>
+        <div className="hero-slider owl-carousel">
+            <div className="hero-area home-1 align-items-center d-flex">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-12">
+                            <div className="hotel-rating">
+                                {/*<ul>*/}
+                                {/*    <li>*/}
+                                {/*        <i className="bi bi-star-fill"/>*/}
+                                {/*    </li>*/}
+                                {/*    <li>*/}
+                                {/*        <i className="bi bi-star-fill"/>*/}
+                                {/*    </li>*/}
+                                {/*    <li>*/}
+                                {/*        <i className="bi bi-star-fill"/>*/}
+                                {/*    </li>*/}
+                                {/*    <li>*/}
+                                {/*        <i className="bi bi-star-fill"/>*/}
+                                {/*    </li>*/}
+                                {/*    <li>*/}
+                                {/*        <i className="bi bi-star-fill"/>*/}
+                                {/*    </li>*/}
+                                {/*</ul>*/}
+                            </div>
+                            <div className="hero-content">
+                                <h4>Grand Chortoq Resort</h4>
+                                <h1>The Best Luxury Hotel</h1>
+                                <h1>In Uzbekistan</h1>
+                            </div>
+                            <div className="luxury-button">
+                                <a href="royella/about.html">Discover More</a>
+                            </div>
+                            {/*<div className="hero-contact">*/}
+                            {/*    <a href="#">*/}
+                            {/*        <i className="bi bi-telephone-fill"/>*/}
+                            {/*        +980 123 4567 890*/}
+                            {/*    </a>*/}
+                            {/*</div>*/}
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
+
     );
 }
 

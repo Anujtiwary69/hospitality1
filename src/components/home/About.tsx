@@ -1,42 +1,46 @@
 import React from 'react';
 
-const About: React.FC = () => {
+export default function About(){
     return (
-        <section className="bg-gray-100 py-16">
-            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="about-area pt-40">
+            <div className="container mt-40">
+                <div className="row align-items-center">
 
-                <div className="flex flex-col justify-center px-8">
-                    <h2 className="text-4xl font-bold mb-4">SANCTUARY, WELLBEING, PANACHE</h2>
-                    <p className=" mb-2">
-                        Nestled on the tranquil shores of Bluewaters Island, Banyan Tree Dubai offers an exquisite
-                        modern escape where serenity envelops every moment. With 500 meters of pristine, private
-                        beachfront overlooking the Arabian Gulf and the iconic Ain Dubai in the backdrop, you’re only
-                        moments away from Jumeirah Beach Residences and Dubai Marina, yet it feels like you are in a
-                        world of your own.
-                    </p>
-                    <p className="mb-2">
-                        Our elegantly appointed rooms and suites blend natural materials with a touch of contemporary
-                        Asian flair, creating an organic warmth that extends to your private balcony. Our lush gardens
-                        and expansive pools beckon for leisurely days that seamlessly transform into vibrant evenings.
-                    </p>
-                    <p className="">
-                        Discover our four captivating dining destinations showcasing fine flavors and culinary craft.
-                        Retreat to our signature Banyan Tree Spa, where Asian traditions are lovingly crafted to nurture
-                        your well-being.
-                    </p>
-                    <p className="">
-                        Every day at Banyan Tree Dubai promises distinctive experiences, culminating in breathtaking
-                        sunsets over the sea.
-                    </p>
-                </div>
+                    <div className="col-lg-6 col-md-12  upper">
+                        <div className="section-title two" data-cue="zoomIn">
+                            {/*<h4>ABOUT CHORTOQ HOSPITALITY</h4>*/}
+                            <h1>ABOUT CHORTOQ HOSPITALITY</h1>
+                            {/*<h1>Californta, Usa</h1>*/}
+                            <p className="section-desc-2">
+                                Discover the art of exceptional hospitality with Chortoq Hospitality, where innovation meets tradition. Established under Chartak Resort JV LLC, we are more than a hotel management company; we are your trusted partner in creating unforgettable guest experiences. Our fascinating story defines what it truly means to be extraordinary from luxury to lifestyle and budget hotels and resorts.
+                            </p>
+                        </div>
 
 
-                <div>
-                    <img src="/image/image.png" alt="Dubai View" className="w-full h-auto"/>
+                        {/*<div className="animation-bar" data-cue="zoomIn"></div>*/}
+                        <div className="luxury-button" data-cue="zoomIn">
+                            <a href="/about.html">Learn More</a>
+                        </div>
+                    </div>
+                    <div className="col-lg-6 col-md-12">
+                        <div className="row" data-cue="zoomIn">
+                            <div className="about_list owl-carousel">
+                                <div className="col-md-12">
+                                    <div className="about-thumb">
+                                        <img
+                                            src="/assets/images/about.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+
     );
 };
 
-export default About;
