@@ -9,9 +9,15 @@ import BookingBar from "@/components/home/BookingForm";
 import About from "@/components/home/About";
 import Offers from "@/components/home/Offers";
 import Footer from "@/components/home/Footer";
+import { ReactLenis } from "@studio-freight/react-lenis";
 
 const inter = Inter({ subsets: ["latin"] });
-
+const lenisOptions = {
+  lerp: 0.1,
+  duration: 1.5,
+  smoothTouch: false, //smooth scroll for touch devices
+  smooth: true,
+};
 export const metadata: Metadata = {
   title: "Chortoq Hospitality",
   description: "Chortoq Hospitality",

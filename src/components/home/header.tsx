@@ -170,7 +170,11 @@ const Header: React.FC = () => {
         <nav className="container mx-auto flex justify-between items-center bg-white h-20 p-4 md:p-0">
             {/* Logo Section */}
             <div className="flex-shrink-0">
-                <img src="/image/logo.png" alt="Company Logo" className="w-24" style={{ width: "140px", marginTop: "20px" }} />
+                <Link href="/">
+                    <img src="/image/logo.png" alt="Company Logo" className="w-24"
+                         style={{width: "140px", marginTop: "20px"}}/>
+                </Link>
+
             </div>
 
             {/* Hamburger Menu for Mobile */}

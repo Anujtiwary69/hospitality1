@@ -51,7 +51,7 @@ const BookingBar: React.FC = () => {
                         <span className="text-xs uppercase font-semibold text-black">{nextDay}</span>
                     </div>
                 </div>
-                <div className="hidden md:block border-r h-16 mx-4"></div>
+                {/*<div className="hidden md:block border-r h-16 mx-4"></div>*/}
             </div>
 
             {/* Room and Guest Info */}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const About: React.FC = () => {
+const Hotel: React.FC = () => {
     return (
         <section className="bg-gray-100 py-16">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -39,4 +39,4 @@ const About: React.FC = () => {
     );
 };
 
-export default About;
+export default Hotel;
