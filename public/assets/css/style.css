@@ -475,7 +475,7 @@ p{
     background: #fff;
     position: relative;
     padding: 35px 15px 38px;
-    border-top: 4px solid #2c2c2d;
+    border-top: 4px solid #7bbbe7;
     margin-top: -98px;
     z-index: 1;
 }
@@ -640,34 +640,44 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .room-single-box:hover .room-details-button{
     left:0;
-} 
+}
 
 .room-details-button a {
     display: inline-block;
     background: #7bbbe7;
     font-size: 15px;
     text-transform: uppercase;
-    color: #fff;
+    color: #fff; /* Default text color */
     font-weight: 500;
     font-family: "Poppins";
     padding: 9px 30px;
     position: relative;
     z-index: 1;
+    overflow: hidden; /* Ensures the :before stays within the button area */
+    transition: color 0.5s ease; /* Add smooth transition for text color */
 }
 
-.room-details-button a:before{
+.room-details-button a:before {
     position: absolute;
     content: "";
-    width:0;
-    height:100%;
+    width: 0;
+    height: 100%;
     left: 50%;
     top: 0;
-    background:#fff;
+    background: #fff;
     border: solid 1px #7bbbe7;
     transition: 0.5s;
     z-index: -1;
-    color: #000000;
+}
 
+.room-details-button a:hover {
+    color: #000; /* Change text color on hover */
+}
+
+.room-details-button a:hover:before {
+    width: 100%;
+    left: 0;
+    transition: 0.5s;
 }
 
 .room-details-button a:hover:before{
