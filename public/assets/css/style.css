@@ -647,7 +647,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background: #7bbbe7;
     font-size: 15px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fff;
     font-weight: 500;
     font-family: "Poppins";
     padding: 9px 30px;
@@ -662,16 +662,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height:100%;
     left: 50%;
     top: 0;
-    background:#2c2c2d;
-
-
-    z-index: -1;
+    background:#fff;
+    border: solid 1px #7bbbe7;
     transition: 0.5s;
+    z-index: -1;
+    color: #000000;
+
 }
 
 .room-details-button a:hover:before{
   width: 100%;
   left:0;
+    color: #000000;
 }
 
 .room-details-button i {

@@ -118,11 +118,11 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="container mx-auto mt-8 text-center">
-                <p className="text-sm">&copy; 2024 - Grand Chortoq Resort Hotels & Resorts. All rights reserved</p>
-                <ul className="flex justify-center space-x-4 mt-2">
-                    <li><Link href="#">Terms & Conditions</Link></li>
-                    <li><Link href="#">Privacy Policy</Link></li>
-                    <li><Link href="#">Cookie preferences</Link></li>
+                <p className="text-sm mb-0" style={{fontFamily:"Poppins"}}>&copy; 2024 - Grand Chortoq Resort Hotels & Resorts. All rights reserved</p>
+                <ul className="flex justify-center space-x-4 ">
+                    <li><Link href="#" style={{fontFamily:"Poppins"}}>Terms & Conditions</Link></li>
+                    <li><Link href="#" style={{fontFamily:"Poppins"}}>Privacy Policy</Link></li>
+                    <li><Link href="#" style={{fontFamily:"Poppins"}}>Cookie preferences</Link></li>
                 </ul>
             </div>
         </footer>
