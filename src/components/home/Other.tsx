@@ -3,22 +3,26 @@ const offer =[
     {
         name:"DINE",
         des:"Savor every moment",
-        image:"/assets/images/other/dine.jpg"
+        image:"/assets/images/other/dine.jpg",
+        button:"Learn More"
     },
     {
         name:"MEET",
         des:"Where ideas connect",
-        image:"/assets/images/other/meet.jpg"
+        image:"/assets/images/other/meet.jpg",
+        button:"Learn More"
     },
     {
         name:"CELEBRATE",
         des:"Where memories are made",
-        image:"/assets/images/other/celebrate.jpg"
+        image:"/assets/images/other/celebrate.jpg",
+        button:"Learn More"
     },
     {
         name:"SHOP",
         des:"Curated for you",
-        image:"/assets/images/other/shop.jpg"
+        image:"/assets/images/other/shop.jpg",
+        button:"Shop Now"
     }
 ]
 export default function Other(){
@@ -44,8 +48,8 @@ export default function Other(){
                                         <a href="royella/room-details.html">{f.name
                                         }</a>
                                         <p>{f.des}</p>
-                                        <button style={{fontSize:"16px", fontWeight:"normal",textDecoration:"unset"}}>
-                                            Learn More
+                                        <button style={{fontSize:"16px", fontFamily:"Poppins", fontWeight:"normal",textDecoration:"unset"}}>
+                                            {f.button}
                                         </button>
                                     </div>
                                     {/*<div className="offers-dollar">*/}

@@ -14,8 +14,8 @@ export default  function BookingForm(){
 
                         <div className="col-lg-2 col-md-3 text-center">
                             <div className="d-flex flex-column">
-                                <span className="display-4 fw-bold">17</span>
-                                <span className="text-uppercase">Aug Sat</span>
+                                <span className="display-4 fw-bold" style={{fontFamily:"Poppins"}}>17</span>
+                                <span className="text-uppercase" style={{fontFamily:"Poppins"}}>Aug Sat</span>
                             </div>
                         </div>
                         {/*<div className="booking-input-box">*/}
@@ -24,13 +24,13 @@ export default  function BookingForm(){
                         {/*</div>*/}
                         <div className="col-lg-2 col-md-3 text-center">
                             <div className="d-flex flex-column">
-                                <span className="display-4 fw-bold">18</span>
-                                <span className="text-uppercase">Aug Sun</span>
+                                <span className="display-4 fw-bold" style={{fontFamily:"Poppins"}}>18</span>
+                                <span className="text-uppercase" style={{fontFamily:"Poppins"}}>Aug Sun</span>
                             </div>
                         </div>
                         <div className="booking-input-box">
-                            <h4>Rooms</h4>
-                            <select name="place" id="place">
+                            <h4 style={{fontFamily:"Poppins"}}>Rooms</h4>
+                            <select name="place" id="place" style={{fontFamily:"Poppins"}}>
                                 <option value="saab">01 Rooms</option>
                                 <option value="opel">02 Rooms</option>
                                 <option value="audi">03 Rooms</option>
@@ -38,8 +38,8 @@ export default  function BookingForm(){
                             </select>
                         </div>
                         <div className="booking-input-box upper">
-                            <h4>Guests</h4>
-                            <select name="place" id="place">
+                            <h4 style={{fontFamily:"Poppins"}}>Guests</h4>
+                            <select name="place" id="place" style={{fontFamily:"Poppins"}}>
                                 <option value="saab">01 Adult, 0 Child</option>
                                 <option value="opel">02 Adult, 1 Child</option>
                                 <option value="audi">02 Adult, 2 Child</option>
@@ -47,7 +47,7 @@ export default  function BookingForm(){
                             </select>
                         </div>
                         <div className="booking-button">
-                            <button type="submit">Book Now</button>
+                            <button type="submit" style={{fontFamily:"Poppins"}}>Book Now</button>
                         </div>
                     </div>
                 </form>

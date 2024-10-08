@@ -15,8 +15,8 @@ const Footer = () => {
                              style={{width: "140px", marginTop: "20px"}}/>
                     </div>
                     <div className="col-8 mb-3" >
-                       <h2>ELEVATING STAYS</h2>
-                        <p>From Mountain Heights to City Lights</p>
+                       <h2 style={{fontFamily:"Poppins"}}>ELEVATING STAYS</h2>
+                        <p style={{fontFamily:"Poppins"}}>From Mountain Heights to City Lights</p>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@ const Footer = () => {
                 <div className="col-span-1">
                     <div className="mb-4">
                         <div className="footer-widget-title">
-                            <h5 className="mb-2">Corporate</h5>
+                            <h5 className="mb-2" style={{fontFamily:"Poppins"}}>Corporate</h5>
                         </div>
 
                         <div className="footer-widget-menu">
@@ -44,7 +44,7 @@ const Footer = () => {
 
                     </div>
                     <div>
-                    <h5 className="mb-2">Explore</h5>
+                    <h5 className="mb-2" style={{fontFamily:"Poppins"}}>Explore</h5>
                     <div className="footer-widget-menu">
                         <ul>
                             <li><Link href="#">Hotels</Link></li>
@@ -60,7 +60,7 @@ const Footer = () => {
 
                 </div>
                 <div>
-                    <h5 className=" mb-2">Support</h5>
+                    <h5 className=" mb-2" style={{fontFamily:"Poppins"}}>Support</h5>
                     <div className="footer-widget-menu">
                         <ul>
                             <li style={{}}>
@@ -89,12 +89,12 @@ const Footer = () => {
                         {/*</ul>*/}
                     </div>
                     <div>
-                        <h5 className="mb-2">Connect</h5>
+                        <h5 className="mb-2" style={{fontFamily:"Poppins"}}>Connect</h5>
                         <ul className="flex space-x-4">
-                            <li><Link href="#"><i className="fab fa-facebook-f"></i></Link></li>
-                            <li><Link href="#"><i className="fab fa-instagram"></i></Link></li>
-                            <li><Link href="#"><i className="fab fa-linkedin-in"></i></Link></li>
-                            <li><Link href="#"><i className="fab fa-youtube"></i></Link></li>
+                            <li><Link href="#"><i className="fab fa-facebook-f" style={{fontSize:"20px"}}></i></Link></li>
+                            <li><Link href="#"><i className="fab fa-instagram" style={{fontSize:"20px"}}></i></Link></li>
+                            <li><Link href="#"><i className="fab fa-linkedin-in" style={{fontSize:"20px"}}></i></Link></li>
+                            <li><Link href="#"><i className="fab fa-youtube" style={{fontSize:"20px"}}></i></Link></li>
 
                         </ul>
                         <div className="single-newsletter-box">
