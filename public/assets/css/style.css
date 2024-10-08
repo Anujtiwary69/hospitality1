@@ -127,11 +127,8 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 .header-menu ul li .sub-menu li a {
     display: block;
     padding: 0px 19px;
-    color: #3a3939;
     width: 400px;
     text-transform: capitalize;
-    font-size: 14px;
-    font-weight: 400;
     transition: 0.5s;
     position: relative;
     z-index: 1;
@@ -1813,8 +1810,6 @@ a.facilities-button i:hover{
 
 .footer-widget-menu ul li a {
     display: inline-block;
-    font-size: 14px;
-    line-height: 10px;
     color: #acacac;
     font-weight: 400;
      font-family: "Poppins", serif;
@@ -1823,7 +1818,6 @@ a.facilities-button i:hover{
 
 .footer-widget-menu ul li a:hover {
     margin-left: 14px;
-    color:#2c2c2d;
 }
 
 .footer-widget-menu ul li a:before {
@@ -1832,8 +1826,6 @@ a.facilities-button i:hover{
     width: 5px;
     height: 5px;
     left: -16px;
-    /*top: 19px;*/
-    background: #2c2c2d;
     border-radius: 50%;
     opacity: 0;
     transition: 0.5s;
