@@ -44,9 +44,9 @@ export default function Other(){
                                         <a href="royella/room-details.html">{f.name
                                         }</a>
                                         <p>{f.des}</p>
-                                        <a href="#">
+                                        <button style={{fontSize:"16px", fontWeight:"normal",textDecoration:"unset"}}>
                                             Learn More
-                                        </a>
+                                        </button>
                                     </div>
                                     {/*<div className="offers-dollar">*/}
                                     {/*    <h4>25% off</h4>*/}

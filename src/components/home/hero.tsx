@@ -27,9 +27,11 @@ const Hero: React.FC = () => {
                                 {/*</ul>*/}
                             </div>
                             <div className="hero-content">
-                                <h4>Grand Chortoq Resort</h4>
-                                <h1>The Best Luxury Hotel</h1>
-                                <h1>In Uzbekistan</h1>
+                                <h4>DESIGNED FOR YOU</h4>
+                                <h1>CRAFTING EXPERIENCES, CREATING MEMORIES
+
+                                </h1>
+
                             </div>
                             <div className="luxury-button">
                                 <a href="royella/about.html">Discover More</a>
