@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import React, {useState, useRef, useEffect} from 'react';
+import Script from "next/script";
 
 
     const menuItems = [
@@ -136,16 +137,42 @@ import React, {useState, useRef, useEffect} from 'react';
 
     ];
 
+
+
+
+const reload = () => {
+    console.log("Its working")
+    console.log('scrollCue:', scrollCue);
+    scrollCue.init(); // Adjust as necessary
+};
+
+
 export default function Header() {
+    useEffect(() => {
+        // Check if the page has already been reloaded
+        if (!sessionStorage.getItem("pageReloaded")) {
+            // Set a flag to mark the page as reloaded
+            sessionStorage.setItem("pageReloaded", "true");
+            // Reload the page
+            window.location.reload();
+        }
+    }, []);
     return (
+
         <div className="header-area" id="sticky-header">
+            <Script
+                src="/assets/js/scrollCue.min.js"
+                strategy="lazyOnload"
+                onLoad={() => console.log('scrollCue script loaded')}
+            />
             <div className="container-fluid"> {/* Fixed typo here */}
                 <div className="row">
                     <div className="col-lg-2">
                         <div className="header-logo">
-                            <Link href="/?name=home" passHref>
+                            <Link href="/home" passHref>
                                 <img src="/image/logo.png" alt="Company Logo" className="w-24"
-                                                 />
+                                />
+
                             </Link>
                         </div>
                     </div>

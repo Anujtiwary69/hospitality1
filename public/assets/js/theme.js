@@ -61,6 +61,7 @@
         }
     });
 
+
   // Venubox
     $('.venobox').venobox({
         numeratio: true,
@@ -72,6 +73,7 @@
     // Loder  //
     $(function () {
         $('body').addClass('loaded');
+        scrollCue.update()
     });
      // Script nav
     $(".team-share").click(function(){

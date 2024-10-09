@@ -139,7 +139,7 @@ export default function Sanatorium() {
                 <div className="container ">
                     <div className="row align-items-center">
                         <div className="col-lg-12 text-center">
-                            <div className="section-title center">
+                            <div className="section-title two center">
                                 <h2>CHORTOQ SANATORIUM</h2>
                                 <h4>Well-Being and Rehabilitation Retreat</h4>
                                 <p>The Chortoq Sanatorium is a premier well-being and rehabilitation center, nestled in
@@ -174,8 +174,8 @@ export default function Sanatorium() {
 
                         <div className="col-lg-6 col-md-12  upper">
                             <div className="section-title two" data-cue="zoomIn">
-                                <h4>{section1[0].title}</h4>
-                                <h1>{section1[0].subTitle}</h1>
+                                <h4>{section1[0].subTitle}</h4>
+                                <h1>{section1[0].title}</h1>
                                 {/*<h1>Californta, Usa</h1>*/}
                                 <p className="section-desc-2">
                                     {section1[0].des}
@@ -220,8 +220,8 @@ export default function Sanatorium() {
                         </div>
                         <div className="col-lg-6 col-md-12  upper">
                             <div className="section-title two" data-cue="zoomIn">
-                                <h4>{section1[1].title}</h4>
-                                <h1>{section1[1].subTitle}</h1>
+                                <h4>{section1[1].subTitle}</h4>
+                                <h1>{section1[1].title}</h1>
                                 {/*<h1>Californta, Usa</h1>*/}
                                 <p className="section-desc-2">
                                     {section1[1].des}
@@ -240,8 +240,8 @@ export default function Sanatorium() {
                             <div className="col-lg-4" key={number}>
                                 <div className="section-title two">
                                     <img src={section1[number + 1].image}/>
-                                    <h4>{section1[number + 1].title}</h4>
-                                    <h1>{section1[number + 1].subTitle}</h1>
+                                    <h4>{section1[number + 1].subTitle}</h4>
+                                    <h1>{section1[number + 1].title}</h1>
                                     <p className="section-desc-2">
                                         {section1[number + 1].des}
                                     </p>
@@ -259,8 +259,8 @@ export default function Sanatorium() {
 
                         <div className="col-lg-6 col-md-12  upper">
                             <div className="section-title two" data-cue="zoomIn">
-                                <h4>{section1[5].title}</h4>
-                                <h1>{section1[5].subTitle}</h1>
+                                <h4>{section1[5].subTitle}</h4>
+                                <h1>{section1[5].title}</h1>
                                 {/*<h1>Californta, Usa</h1>*/}
                                 <p className="section-desc-2">
                                     {section1[5].des}
@@ -295,8 +295,8 @@ export default function Sanatorium() {
                             <div className="col-lg-4" key={number}>
                                 <div className="section-title two ">
                                     <img src={section1[number + 5].image}/>
-                                    <h4>{section1[number + 5].title}</h4>
-                                    <h1>{section1[number + 5].subTitle}</h1>
+                                    <h4>{section1[number + 5].subTitle}</h4>
+                                    <h1>{section1[number + 5].title}</h1>
                                     <p className="section-desc-2">
                                         {section1[number + 5].des}
                                     </p>
@@ -328,8 +328,8 @@ export default function Sanatorium() {
                         </div>
                         <div className="col-lg-6 col-md-12  upper">
                             <div className="section-title two" data-cue="zoomIn">
-                                <h4>{section1[9].title}</h4>
-                                <h1>{section1[9].subTitle}</h1>
+                                <h4>{section1[9].subTitle}</h4>
+                                <h1>{section1[9].title}</h1>
                                 {/*<h1>Californta, Usa</h1>*/}
                                 <p className="section-desc-2">
                                     {section1[9].des}
@@ -343,8 +343,8 @@ export default function Sanatorium() {
 
                         <div className="col-lg-6 col-md-12  upper">
                             <div className="section-title two" data-cue="zoomIn">
-                                <h4>{section1[10].title}</h4>
-                                <h1>{section1[10].subTitle}</h1>
+                                <h4>{section1[10].subTitle}</h4>
+                                <h1>{section1[10].title}</h1>
                                 {/*<h1>Californta, Usa</h1>*/}
                                 <p className="section-desc-2">
                                 {section1[10].des}

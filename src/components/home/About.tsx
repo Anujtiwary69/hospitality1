@@ -23,8 +23,8 @@ export default function About(){
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12">
-                        <div className="row" data-cue="zoomIn">
-                            <div className="about_list owl-carousel">
+                        <div className="row" >
+                            <div className="about_list ">
                                 <div className="col-md-12">
                                     <div className="about-thumb">
                                         <img

@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
 
                             </div>
                             <div className="luxury-button">
-                                <a href="royella/about.html">Discover More</a>
+                                <a href="/">Discover More</a>
                             </div>
                             {/*<div className="hero-contact">*/}
                             {/*    <a href="#">*/}
