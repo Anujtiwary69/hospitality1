@@ -141,6 +141,13 @@ import Script from "next/script";
 
 
 
+// export async function getServerSideProps(context) {
+//     context.res.setHeader('Cache-Control', 'no-store, must-revalidate');
+//     return {
+//         props: {},
+//     };
+// }
+
 
 export default function Header() {
 

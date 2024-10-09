@@ -1,8 +1,17 @@
-import React from 'react';
+"use client"
+import React, {useEffect, useState} from 'react';
 
+const getRandomNumber = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 export default function About(){
+    const [randomNumber, setRandomNumber] = useState(null);
+    useEffect(() => {
+        const number = getRandomNumber(1, 100); // Change the range as needed
+        setRandomNumber(number);
+    }, []);
     return (
-        <div className="about-area pt-40">
+        <div className="about-area pt-40" key={randomNumber}>
             <div className="container mt-40">
                 <div className="row align-items-center">
 
@@ -16,7 +25,6 @@ export default function About(){
                             </p>
                         </div>
 
-
                         {/*<div className="animation-bar" data-cue="zoomIn"></div>*/}
                         <div className="luxury-button" data-cue="zoomIn">
                             <a href="/about.html">Learn More</a>
@@ -24,7 +32,7 @@ export default function About(){
                     </div>
                     <div className="col-lg-6 col-md-12">
                         <div className="row" >
-                            <div className="about_list ">
+                            <div className="about_list owl-carousel">
                                 <div className="col-md-12">
                                     <div className="about-thumb">
                                         <img

@@ -68,32 +68,38 @@ const section1 = [
         )
     },
     {
-        title: "GYNECO STUDIO",
+        title: "GYNAECOLOGY STUDIO",
         subTitle: "Empowering Women's Health",
         image: "/assets/images/sanatorium/s7.jpg",
         des: (
             <p>
-                The Gyneco Studio at Chortoq Sanatorium is dedicated to the unique health needs of women. Offering specialized treatments for gynecological conditions, the studio combines modern medical expertise with the therapeutic properties of Chortoq Mineral Water. Whether you're seeking preventive care, support for chronic conditions, or post-operative rehabilitation, our team of experienced specialists will provide personalized treatment plans. The Gyneco Studio is designed to nurture and support women’s health in a serene and caring environment.
-            </p>
-        )
-    },
-    {
-        title: "COMFORT MASSAGE CENTRE",
-        subTitle: "Relax, Restore, Renew",
-        image: "/assets/images/sanatorium/s8.jpg",
-        des: (
-            <p>
-                At the Comfort Massage Centre, relaxation takes on new meaning. Our skilled therapists combine traditional techniques with the healing benefits of Chortoq Mineral Water to deliver personalized massage treatments that relieve stress, improve circulation, and promote overall well-being. Whether you're looking for deep relaxation or targeted pain relief, the Comfort Massage Centre offers a sanctuary where your body and mind can find true peace and rejuvenation.
+                The Gynaecology
+                Studio at Chortoq Sanatorium is dedicated to the unique health needs of women. Offering specialized treatments for gynecological conditions, the studio combines modern medical expertise with the therapeutic properties of Chortoq Mineral Water. Whether you're seeking preventive care, support for chronic conditions, or post-operative rehabilitation, our team of experienced specialists will provide personalized treatment plans. The Gynaecology
+                Studio is designed to nurture and support women’s health in a serene and caring environment.
             </p>
         )
     },
     {
         title: "COLON HYDROTHERAPY",
         subTitle: "Cleanse from Within",
-        image: "/assets/images/sanatorium/s9.jpg",
+        image: "/assets/images/sanatorium/s8.jpg",
         des: (
             <p>
                 Experience the transformative benefits of Colon Hydrotherapy at Chortoq Sanatorium. This natural cleansing treatment helps to remove toxins, improve digestion, and promote overall wellness. Combined with the healing properties of Chortoq Mineral Water, Colon Hydrotherapy provides a gentle yet effective way to restore balance within the body. Our professional team ensures a safe, comfortable experience, leaving you feeling lighter, revitalized, and refreshed.
+            </p>
+        )
+    },
+    {
+        title: "COMFORT MASSAGE CENTRE",
+        subTitle: "Relax, Restore, Renew",
+        image: "/assets/images/sanatorium/s9.jpg",
+        des: (
+            <p>
+                At the Comfort Massage Centre, relaxation takes on new meaning. Our skilled therapists combine
+                traditional techniques with the healing benefits of Chortoq Mineral Water to deliver personalized
+                massage treatments that relieve stress, improve circulation, and promote overall well-being. Whether
+                you're looking for deep relaxation or targeted pain relief, the Comfort Massage Centre offers a
+                sanctuary where your body and mind can find true peace and rejuvenation.
             </p>
         )
     },
@@ -103,24 +109,27 @@ const section1 = [
         image: "/assets/images/sanatorium/s10.jpg",
         des: (
             <p>
-                The Cosmetology services at Chortoq Sanatorium blend nature with advanced skincare and technology to enhance your natural beauty. Using high-quality products and techniques, our expert aestheticians provide treatments tailored to your skin’s unique needs. From rejuvenating facials to anti-aging therapies, each session leaves you feeling refreshed and radiant. Harness the benefits of Chortoq Mineral Water and other natural elements to achieve healthy, glowing skin in the serene surroundings of our wellness sanctuary.
+                The Cosmetology services at Chortoq Sanatorium blend nature with advanced skincare and technology to
+                enhance your natural beauty. Using high-quality products and techniques, our expert aestheticians
+                provide treatments tailored to your skin’s unique needs. From rejuvenating facials to anti-aging
+                therapies, each session leaves you feeling refreshed and radiant. Harness the benefits of Chortoq Mineral Water and other natural elements to achieve healthy, glowing skin in the serene surroundings of our wellness sanctuary.
             </p>
         )
     },
-    {
-        title: "COSMETOLOGY",
-        subTitle: "Where Beauty Meets Nature",
-        image: "/assets/images/sanatorium/s11.jpg",
-        des: (
-            <p>
-                The Cosmetology services at Chortoq Sanatorium blend nature with advanced skincare and technology to enhance your natural beauty. Using high-quality products and techniques, our expert aestheticians provide treatments tailored to your skin’s unique needs. From rejuvenating facials to anti-aging therapies, each session leaves you feeling refreshed and radiant. Harness the benefits of Chortoq Mineral Water and other natural elements to achieve healthy, glowing skin in the serene surroundings of our wellness sanctuary.
-            </p>
-        )
-    },
+    // {
+    //     title: "COSMETOLOGY",
+    //     subTitle: "Where Beauty Meets Nature",
+    //     image: "/assets/images/sanatorium/s11.jpg",
+    //     des: (
+    //         <p>
+    //             The Cosmetology services at Chortoq Sanatorium blend nature with advanced skincare and technology to enhance your natural beauty. Using high-quality products and techniques, our expert aestheticians provide treatments tailored to your skin’s unique needs. From rejuvenating facials to anti-aging therapies, each session leaves you feeling refreshed and radiant. Harness the benefits of Chortoq Mineral Water and other natural elements to achieve healthy, glowing skin in the serene surroundings of our wellness sanctuary.
+    //         </p>
+    //     )
+    // },
     {
         title: "MUD THERAPY ",
         subTitle: "Healing from the Earth",
-        image: "/assets/images/sanatorium/s12.jpg",
+        image: "/assets/images/sanatorium/s11.jpg",
         des: (
             <p>
                 The Mud Therapy at Chortoq Sanatorium offers a deeply restorative treatment using mineral-enriched mud, prepared with the healing properties of Chortoq Mineral Water. Applied as warm therapeutic pads, this natural remedy is designed to relieve pain, reduce inflammation, and promote circulation. Ideal for those suffering from joint, muscle, or skin conditions, the mud therapy treatment taps into nature's powerful resources to restore balance and vitality. This ancient, time-tested therapy, combined with modern wellness expertise, creates a soothing and healing experience that leaves guests feeling renewed.
@@ -133,13 +142,13 @@ const section1 = [
 export default function Sanatorium() {
     return (
         <>
-            <DefaultHero imageName="sanatorium.png" title="Sanatorium"/>
+            <DefaultHero imageName="sanatorium.png" title="Healing Waters, Expert Care" subTitle="Wellness Redefined"/>
             <br/>
             <div className="room-title-area" style={{paddingBottom: '30px'}}>
                 <div className="container ">
                     <div className="row align-items-center">
                         <div className="col-lg-12 text-center">
-                            <div className="section-title two center">
+                            <div className="section-title two center container" style={{width:"70%"}}>
                                 <h2>CHORTOQ SANATORIUM</h2>
                                 <h4>Well-Being and Rehabilitation Retreat</h4>
                                 <p>The Chortoq Sanatorium is a premier well-being and rehabilitation center, nestled in
@@ -240,7 +249,7 @@ export default function Sanatorium() {
                             <div className="col-lg-4" key={number}>
                                 <div className="section-title two">
                                     <img src={section1[number + 1].image}/>
-                                    <h4>{section1[number + 1].subTitle}</h4>
+                                    <h4 className="mt-3">{section1[number + 1].subTitle}</h4>
                                     <h1>{section1[number + 1].title}</h1>
                                     <p className="section-desc-2">
                                         {section1[number + 1].des}
@@ -295,7 +304,7 @@ export default function Sanatorium() {
                             <div className="col-lg-4" key={number}>
                                 <div className="section-title two ">
                                     <img src={section1[number + 5].image}/>
-                                    <h4>{section1[number + 5].subTitle}</h4>
+                                    <h4 className="mt-3">{section1[number + 5].subTitle}</h4>
                                     <h1>{section1[number + 5].title}</h1>
                                     <p className="section-desc-2">
                                         {section1[number + 5].des}

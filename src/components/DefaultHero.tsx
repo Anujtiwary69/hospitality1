@@ -7,11 +7,12 @@ const image = "http://localhost:3000/image/banner-1.jpg"
 interface DefaultHeroProps {
     imageName?: string
     title?: string
+    subTitle?: string
 }
 
 
 
-const DefaultHero: React.FC<DefaultHeroProps> = ({imageName, title}) => {
+const DefaultHero: React.FC<DefaultHeroProps> = ({imageName, title,subTitle}) => {
     return (
         <div className="hero-slider owl-carousel">
             <div className="hero-area home-1 align-items-center d-flex" style={{
@@ -45,6 +46,7 @@ const DefaultHero: React.FC<DefaultHeroProps> = ({imageName, title}) => {
                             </div>
 
                             <div className="hero-content">
+                                <h4>{subTitle}</h4>
                                 <h1>{title}</h1>
 
                             </div>
