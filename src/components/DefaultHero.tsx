@@ -4,16 +4,18 @@ import React from 'react';
 const image = "http://localhost:3000/image/banner-1.jpg"
 
 
-interface HeroProps {
-    image?: string
+interface DefaultHeroProps {
+    imageName?: string
     title?: string
 }
 
-const DefaultHero: React.FC = ({image,title}) => {
+
+
+const DefaultHero: React.FC<DefaultHeroProps> = ({imageName, title}) => {
     return (
         <div className="hero-slider owl-carousel">
             <div className="hero-area home-1 align-items-center d-flex" style={{
-                background: `url(/assets/images/slider/${image})`, // Update with the correct path to your image
+                background: `url(/assets/images/slider/${imageName})`, // Update with the correct path to your image
                 backgroundSize: 'cover', // Ensures the image covers the entire div
                 backgroundPosition: 'center', // Centers the image
                 height: '950px', textAlign: 'center',

@@ -133,7 +133,7 @@ const section1 = [
 export default function Sanatorium() {
     return (
         <>
-            <DefaultHero image="sanatorium.png" title="Sanatorium"/>
+            <DefaultHero imageName="sanatorium.png" title="Sanatorium"/>
             <br/>
             <div className="room-title-area" style={{paddingBottom: '30px'}}>
                 <div className="container ">
