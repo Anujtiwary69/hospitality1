@@ -43,7 +43,7 @@ export default function Sanatorium(){
 
                         {/*<div className="animation-bar" data-cue="zoomIn"></div>*/}
                         <div className="luxury-button" data-cue="zoomIn">
-                            <a href="/about.html">Learn More</a>
+                            <a href="/sanatorium">Learn More</a>
                         </div>
                     </div>
                 </div>

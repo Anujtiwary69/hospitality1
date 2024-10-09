@@ -16,19 +16,19 @@ import React, {useState, useRef, useEffect} from 'react';
         },
         {
             name: 'Sanatorium',
-            link: '/offers',
-            submenu: [
-                { name: 'Chortoq Sanatorium', link: '/meetings' },
-                { name: 'Chortoq Diagnostic Centre', link: '/events' },
-                { name: 'Chortoq Laboratory', link: '/conferences' },
-                { name: 'Physiotheraphy Centre', link: '/meetings' },
-                { name: 'Salt Room', link: '/events' },
-                { name: 'Balneotherapy', link: '/conferences' },
-                { name: 'Gyneco Studio', link: '/meetings' },
-                { name: 'Colon Hydrotherapy', link: '/events' },
-                { name: 'Comfort Massage Centre', link: '/conferences' },
-                { name: 'Cosmetology', link: '/conferences' },
-            ],
+            link: '/sanatorium',
+            // submenu: [
+            //     { name: 'Chortoq Sanatorium', link: '/meetings' },
+            //     { name: 'Chortoq Diagnostic Centre', link: '/events' },
+            //     { name: 'Chortoq Laboratory', link: '/conferences' },
+            //     { name: 'Physiotheraphy Centre', link: '/meetings' },
+            //     { name: 'Salt Room', link: '/events' },
+            //     { name: 'Balneotherapy', link: '/conferences' },
+            //     { name: 'Gyneco Studio', link: '/meetings' },
+            //     { name: 'Colon Hydrotherapy', link: '/events' },
+            //     { name: 'Comfort Massage Centre', link: '/conferences' },
+            //     { name: 'Cosmetology', link: '/conferences' },
+            // ],
         },
         {
             name: 'Wellness',
@@ -143,7 +143,7 @@ export default function Header() {
                 <div className="row">
                     <div className="col-lg-2">
                         <div className="header-logo">
-                            <Link href="index.html">
+                            <Link href="http://localhost:3000/" passHref>
                                 <img src="/image/logo.png" alt="Company Logo" className="w-24"
                                                  />
                             </Link>
@@ -154,7 +154,7 @@ export default function Header() {
                             <ul>
                                 {menuItems.map((menuItem, index) => (
                                     <li className="menu-item-has-children" key={menuItem.name + index}>
-                                        <a href="#">
+                                        <a href={menuItem.link}>
                                             {menuItem.name}
                                             {menuItem.submenu ? <i className="fas fa-chevron-down" /> : null}
                                         </a>

@@ -4,6 +4,7 @@ import BookingForm from "@/components/home/BookingForm";
 import Hero from "@/components/home/hero";
 import About from "@/components/home/About";
 import Offers from "@/components/home/Offers";
+import { useRouter } from 'next/router';
 import Footer from "@/components/home/Footer";
 import HotelList from "@/components/home/HotelList";
 import RegionalHighlights from "@/components/home/Discover";
@@ -13,6 +14,7 @@ import Wellness from "@/components/home/Wellness";
 import Other from "@/components/home/Other";
 
 export default function Home() {
+
     return (
         <div className="bg-white text-black">
             <Hero/>

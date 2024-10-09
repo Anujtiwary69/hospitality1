@@ -61,7 +61,7 @@ export default function HotelList(){
                                     {/*</div>*/}
                                     <div className="room-content">
                                         <h4>{h.des}</h4>
-                                        <a href="royella/room.html">{h.name}</a>
+                                        <a href="royella/room.html" style={{ marginBottom: h.name === "O2ZODA PALACE" ? "44px" : "20px" }}>{h.name}</a>
                                         {/*<p>1500 SQ.FT/Rooms</p>*/}
                                     </div>
 

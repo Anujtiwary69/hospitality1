@@ -101,7 +101,7 @@ export default function RootLayout({
       {/* venobox CSS */}
       <link
           rel="stylesheet"
-          href="royella/venobox/venobox.css"
+          href="/assets/venobox/venobox.css"
           type="text/css"
           media="all"
       />
