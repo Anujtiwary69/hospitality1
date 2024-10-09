@@ -143,7 +143,7 @@ export default function Header() {
                 <div className="row">
                     <div className="col-lg-2">
                         <div className="header-logo">
-                            <Link href="http://localhost:3000/" passHref>
+                            <Link href="/?name=home" passHref>
                                 <img src="/image/logo.png" alt="Company Logo" className="w-24"
                                                  />
                             </Link>
