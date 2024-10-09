@@ -140,23 +140,10 @@ import Script from "next/script";
 
 
 
-const reload = () => {
-    console.log("Its working")
-    console.log('scrollCue:', scrollCue);
-    scrollCue.init(); // Adjust as necessary
-};
 
 
 export default function Header() {
-    useEffect(() => {
-        // Check if the page has already been reloaded
-        if (!sessionStorage.getItem("pageReloaded")) {
-            // Set a flag to mark the page as reloaded
-            sessionStorage.setItem("pageReloaded", "true");
-            // Reload the page
-            window.location.reload();
-        }
-    }, []);
+
     return (
 
         <div className="header-area" id="sticky-header">
