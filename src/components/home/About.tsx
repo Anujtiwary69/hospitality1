@@ -1,17 +1,11 @@
 "use client"
 import React, {useEffect, useState} from 'react';
 
-const getRandomNumber = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-};
-export default function About(){
-    const [randomNumber, setRandomNumber] = useState(null);
-    useEffect(() => {
-        const number = getRandomNumber(1, 100); // Change the range as needed
-        setRandomNumber(number);
-    }, []);
+
+export default function About() {
+
     return (
-        <div className="about-area pt-40" key={randomNumber}>
+        <div className="about-area pt-40">
             <div className="container mt-40">
                 <div className="row align-items-center">
 
