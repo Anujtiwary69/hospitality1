@@ -1,4 +1,31 @@
+"use client"
+import React, { useEffect, useState } from 'react';
+
 export default  function BookingForm(){
+    const [isPageLoaded, setIsPageLoaded] = useState(false);
+
+    useEffect(() => {
+        const handlePageLoad = () => {
+            setIsPageLoaded(true);
+        };
+
+        // Check if the page is already loaded
+        if (document.readyState === 'complete') {
+            setIsPageLoaded(true);
+        } else {
+            window.addEventListener('load', handlePageLoad);
+        }
+
+        // Clean up the event listener
+        return () => {
+            window.removeEventListener('load', handlePageLoad);
+        };
+    }, []);
+
+    if (!isPageLoaded) {
+        return null; // Don't render the component until the page is fully loaded
+    }
+
     return (
         <div className="booking-area home-1">
             <div className="container">

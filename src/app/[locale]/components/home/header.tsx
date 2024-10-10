@@ -193,7 +193,7 @@ export default function Header() {
                                 {menuItems.map((menuItem, index) => (
                                     <li className="menu-item-has-children" key={menuItem.name + index}>
 
-                                        <a href={menuItem.link}>
+                                        <a href={lang + menuItem.link}>
                                             {t(`menus:menu.${menuItem.name.toLowerCase()}.name`)}
                                             {menuItem.submenu ? <i className="fas fa-chevron-down"/> : null}
                                         </a>
@@ -204,7 +204,7 @@ export default function Header() {
                                                 {menuItem.name === 'Shop' ? (
                                                     shop.map((subItem, subIndex) => (
                                                         <li key={subItem.name + subIndex}>
-                                                            <Link href={subItem.link}>
+                                                            <Link href={lang + subItem.link}>
                                                                 {t(`${subItem.name}`)}
                                                             </Link>
                                                         </li>
@@ -212,7 +212,7 @@ export default function Header() {
                                                 ) : menuItem.name === 'Meet' ? (
                                                     meet.map((subItem, subIndex) => (
                                                         <li key={subItem.name + subIndex}>
-                                                            <Link href={subItem.link}>
+                                                            <Link href={lang + subItem.link}>
                                                                 {t(`${subItem.name}`)}
                                                             </Link>
                                                         </li>
@@ -220,7 +220,7 @@ export default function Header() {
                                                 ) : menuItem.name === 'Wellness' ? (
                                                         wellness.map((subItem, subIndex) => (
                                                             <li key={subItem.name + subIndex}>
-                                                                <Link href={subItem.link}>
+                                                                <Link href={lang + subItem.link}>
                                                                     {t(`${subItem.name}`)}
                                                                 </Link>
                                                             </li>
@@ -230,7 +230,7 @@ export default function Header() {
                                                     menuItem.name === 'Hotels' ? (
                                                         hotels.map((subItem, subIndex) => (
                                                             <li key={subItem.name + subIndex}>
-                                                                <Link href={subItem.link}>
+                                                                <Link href={lang + subItem.link}>
                                                                     {t(`${subItem.name}`)}
                                                                 </Link>
                                                             </li>
@@ -238,7 +238,7 @@ export default function Header() {
                                                     ) : menuItem.name === 'Dine' ? (
                                                             dine.map((subItem, subIndex) => (
                                                                 <li key={subItem.name + subIndex}>
-                                                                    <Link href={subItem.link}>
+                                                                    <Link href={lang + subItem.link}>
                                                                         {t(`${subItem.name}`)}
                                                                     </Link>
                                                                 </li>
@@ -247,7 +247,7 @@ export default function Header() {
                                                         : menuItem.name === 'Sanatorium' ? (
                                                             sanatorium.map((subItem, subIndex) => (
                                                                 <li key={subItem.name + subIndex}>
-                                                                    <Link href={subItem.link}>
+                                                                    <Link href={lang + subItem.link}>
                                                                         {t(`${subItem.name}`)}
                                                                     </Link>
                                                                 </li>

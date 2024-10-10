@@ -11,6 +11,12 @@ export default function LanguageChanger() {
     const router = useRouter();
     const currentPathname = usePathname();
 
+    const removeOwlClasses = () => {
+        const owlElements = document.querySelectorAll('.owl-loaded, .owl-drag');
+        owlElements.forEach((el) => {
+            el.classList.remove('owl-loaded', 'owl-drag');
+        });
+    };
     const handleChange = e => {
         const newLocale = e.target.value;
 
@@ -33,7 +39,10 @@ export default function LanguageChanger() {
             : `/${newLocale}${newPathname}`;
 
         router.push(targetPath);
+
+
         router.refresh();
+        removeOwlClasses();
     };
     return (
         <select onChange={handleChange} value={currentLocale} className="form-select" style={{borderRadius:"0px",width:"28%",marginLeft:"10px"}}>

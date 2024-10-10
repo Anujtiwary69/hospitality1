@@ -1,5 +1,6 @@
 "use client"
 import {useTranslation} from "react-i18next";
+import {useCallback, useEffect} from "react";
 
 const hotel= [
     {
@@ -19,7 +20,19 @@ const hotel= [
     }
 ]
 export default function HotelList(){
-    const { t } = useTranslation();
+    const { t,i18n } = useTranslation();
+    console.log(i18n.language)
+
+    const handleLanguageChanged = useCallback(() => {
+        console.log(`Language changed to: ${i18n.language}`);
+    }, []);
+
+    useEffect(() => {
+        i18n.on('languageChanged', handleLanguageChanged);
+        return () => {
+            i18n.off('languageChanged', handleLanguageChanged);
+        };
+    }, [handleLanguageChanged]);
     return(
         <>
             <div className="room-title-area">
