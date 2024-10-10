@@ -1,21 +1,25 @@
+"use client"
+import {useTranslation} from "react-i18next";
+
 const hotel= [
     {
-        name: "GRAND CHORTOQ RESORT",
-        des:"Nature’s Healing Paradise",
+        name: "grand_chortoq_resort",
+        des:"nature_healing_paradise",
         image:"/assets/images/hotels/GRAND.jpg"
     },
     {
-        name: "CHORTOQ BOUTIQUE HOTEL",
-        des:"Chic. Modern. Vibrant.",
+        name: "chortoq_boutique_hotel",
+        des:"chic_modern_vibrant",
         image:"/assets/images/hotels/BOUTIQUE.jpg"
     },
     {
-        name: "O2ZODA PALACE",
-        des:"Serene mountain escape",
+        name: "o2zoda_palace",
+        des:"serene_mountain_escape",
         image:"/assets/images/hotels/O2ZODA.jpg"
     }
 ]
 export default function HotelList(){
+    const { t } = useTranslation();
     return(
         <>
             <div className="room-title-area">
@@ -29,9 +33,9 @@ export default function HotelList(){
                                     {/*    alt=""*/}
                                     {/*/>*/}
                                 </div>
-                                <h1>FEATURED HOTELS</h1>
+                                <h1>{t('home:featured_hotels')}</h1>
                                 <p className="section-desc-1">
-                                    Step into a world of unforgettable experiences at our unique hotels, where every stay is crafted to delight. From serene retreats to vibrant city escapes, let Chortoq Hospitality be your gateway to exceptional comfort and beautiful destinations.
+                                    {t('home:featured_hotels_text')}
                                 </p>
                             </div>
                         </div>
@@ -50,7 +54,7 @@ export default function HotelList(){
                                         <img src={h.image} alt="" />
                                         <div className="room-details-button">
                                             <a href="royella/room-details.html">
-                                               Explore
+                                                {t('home:explore')}
                                                 <i className="bi bi-arrow-right" />
                                             </a>
                                         </div>
@@ -60,8 +64,8 @@ export default function HotelList(){
                                     {/*    <span>Night</span>*/}
                                     {/*</div>*/}
                                     <div className="room-content">
-                                        <h4>{h.des}</h4>
-                                        <a href="royella/room.html" style={{ marginBottom: h.name === "O2ZODA PALACE" ? "44px" : "20px" }}>{h.name}</a>
+                                        <h4>{t(`home:${h.des}`)}</h4>
+                                        <a href="royella/room.html" style={{ marginBottom: h.name === "o2zoda_palace" ? "44px" : "20px" }}>{t(`home:${h.name}`)}</a>
                                         {/*<p>1500 SQ.FT/Rooms</p>*/}
                                     </div>
 

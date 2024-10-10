@@ -1,31 +1,34 @@
+"use client"
+import {useTranslation} from "react-i18next";
 
 const offer =[
     {
-        name:"DINE",
-        des:"Savor every moment",
+        name:"dine",
+        des:"savor_moments",
         image:"/assets/images/other/dine.jpg",
-        button:"Learn More"
+        button:"learn_more"
     },
     {
-        name:"MEET",
-        des:"Where ideas connect",
+        name:"meet",
+        des:"where_ideas_connect",
         image:"/assets/images/other/meet.jpg",
-        button:"Learn More"
+        button:"learn_more"
     },
     {
-        name:"CELEBRATE",
-        des:"Where memories are made",
+        name:"celebrate",
+        des:"where_memories_made",
         image:"/assets/images/other/celebrate.jpg",
-        button:"Learn More"
+        button:"learn_more"
     },
     {
-        name:"SHOP",
-        des:"Curated for you",
+        name:"shop",
+        des:"curated_for_you",
         image:"/assets/images/other/shop.jpg",
-        button:"Shop Now"
+        button:"shop_now"
     }
 ]
 export default function Other(){
+    const { t } = useTranslation();
     return (
         <div className="offers-area">
             <div className="container">
@@ -45,11 +48,11 @@ export default function Other(){
                                         <img src={f.image} alt=""/>
                                     </div>
                                     <div className="offers-content">
-                                        <a href="royella/room-details.html">{f.name
+                                        <a href="royella/room-details.html">{t(`home:${f.name}`)
                                         }</a>
-                                        <p>{f.des}</p>
+                                        <p> {t(`home:${f.des}`)}</p>
                                         <button style={{fontSize:"16px", fontFamily:"Poppins", fontWeight:"normal",textDecoration:"unset"}}>
-                                            {f.button}
+                                            {t(`home:${f.button}`)}
                                         </button>
                                     </div>
                                     {/*<div className="offers-dollar">*/}

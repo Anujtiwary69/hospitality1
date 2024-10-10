@@ -1,6 +1,9 @@
-import React from "react";
+"use client"
+import React from 'react';
+import {useTranslation} from "react-i18next";
 
-export default function Sanatorium(){
+export default function Wellness(){
+    const { t } = useTranslation();
     return (
         <div className="about-area pt-40">
             <div className="container mt-40">
@@ -13,7 +16,7 @@ export default function Sanatorium(){
                                 <div className="col-md-12">
                                     <div className="about-thumb">
                                         <img
-                                            src="/assets/images/sana.jpg"
+                                            src="/assets/images/well.jpg"
                                             alt=""
                                         />
                                     </div>
@@ -24,30 +27,24 @@ export default function Sanatorium(){
                     </div>
                     <div className="col-lg-6 col-md-12  upper">
                         <div className="section-title two" data-cue="zoomIn">
-                            <h4>CHORTOQ SANATORIUM </h4>
-                            <h1>Well-Being and Rehabilitation Retreat</h1>
+                            <h4>{t('home:wellness')}</h4>
+                            <h1>  {t('home:wellness_sub')}</h1>
                             {/*<h1>Californta, Usa</h1>*/}
-                            {/*<p className="section-desc-2">*/}
-                            {/*    Well-Being and Rehabilitation Retreat </p>*/}
                             <p className="section-desc-2">
-                                The Chortoq Sanatorium is a premier well-being and rehabilitation center, nestled in the
-                                serene environment of the Grand Chortoq Resort, offering a holistic approach to health
-                                and recovery. </p>
-                                <p className="section-desc-2">
-                                    At the heart of the Chortoq Sanatorium's treatments is the renowned Chortoq Mineral
-                                    Water - a pure embodiment of nature's essence.
-
-                                </p>
+                                {t('home:wellness_description')}
+                            </p>
                         </div>
 
 
                         {/*<div className="animation-bar" data-cue="zoomIn"></div>*/}
                         <div className="luxury-button" data-cue="zoomIn">
-                            <a href="/sanatorium">Learn More</a>
+                            <a href="/about.html">  {t('home:learn_more')}</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+
+    );
+};
+

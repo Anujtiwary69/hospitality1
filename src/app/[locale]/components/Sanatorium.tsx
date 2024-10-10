@@ -1,6 +1,10 @@
-import React from 'react';
+"use client"
+import React from "react";
 
-export default function Wellness(){
+import {useTranslation} from "react-i18next";
+
+export default function Sanatorium(){
+    const { t } = useTranslation();
     return (
         <div className="about-area pt-40">
             <div className="container mt-40">
@@ -13,7 +17,7 @@ export default function Wellness(){
                                 <div className="col-md-12">
                                     <div className="about-thumb">
                                         <img
-                                            src="/assets/images/well.jpg"
+                                            src="/assets/images/sana.jpg"
                                             alt=""
                                         />
                                     </div>
@@ -24,24 +28,23 @@ export default function Wellness(){
                     </div>
                     <div className="col-lg-6 col-md-12  upper">
                         <div className="section-title two" data-cue="zoomIn">
-                            <h4>WELLNESS</h4>
-                            <h1>Start your journey of renewal</h1>
+                            <h4>{t('home:chortoq_sanatorium')}</h4>
+                            <h1>{t('home:Well-Being')}</h1>
                             {/*<h1>Californta, Usa</h1>*/}
+                            {/*<p className="section-desc-2">*/}
+                            {/*    Well-Being and Rehabilitation Retreat </p>*/}
                             <p className="section-desc-2">
-                                At Chortoq Hospitality, wellness is a way of life. Our expansive wellness offerings are designed to cater to every aspect of well-being, blending relaxation, fitness, and rejuvenation in harmony with nature.
-                            </p>
+                                {t('home:sanatorium_description')}</p>
                         </div>
 
 
                         {/*<div className="animation-bar" data-cue="zoomIn"></div>*/}
                         <div className="luxury-button" data-cue="zoomIn">
-                            <a href="/about.html">Learn More</a>
+                            <a href="/sanatorium">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-    );
-};
-
+    )
+}

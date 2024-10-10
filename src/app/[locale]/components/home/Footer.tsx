@@ -1,11 +1,14 @@
 // components/Footer.tsx
 
+"use client"
 import React from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faLinkedinIn, faYoutube, faWeibo, faWeixin } from '@fortawesome/free-brands-svg-icons';
+import {useTranslation} from "react-i18next";
 
 const Footer = () => {
+    const { t } = useTranslation();
     return (
         <footer className=" text-white py-8" style={{backgroundColor:'#355a97 !important;'}}>
             <div className="container">
@@ -15,8 +18,8 @@ const Footer = () => {
                              style={{width: "140px", marginTop: "20px"}}/>
                     </div>
                     <div className="col-8 mb-3" >
-                       <h2 style={{fontFamily:"Poppins"}}>ELEVATING STAYS</h2>
-                        <p style={{fontFamily:"Poppins"}}>From Mountain Heights to City Lights</p>
+                       <h2 style={{fontFamily:"Poppins"}}>{t('footer:elevating_stays')}</h2>
+                        <p style={{fontFamily:"Poppins"}}>{t('footer:from_mountain_heights')}</p>
                     </div>
                 </div>
             </div>
@@ -24,18 +27,18 @@ const Footer = () => {
                 <div className="col-span-1">
                     <div className="mb-4">
                         <div className="footer-widget-title">
-                            <h5 className="mb-2" style={{fontFamily:"Poppins"}}>Corporate</h5>
+                            <h5 className="mb-2" style={{fontFamily:"Poppins"}}>{t('footer:corporate')}</h5>
                         </div>
 
                         <div className="footer-widget-menu">
                             <ul>
-                                <li><Link href="#">About </Link></li>
-                                <li><Link href="#">Mision </Link></li>
-                                <li><Link href="#">Vision</Link></li>
-                                <li><Link href="#">Executive Team</Link></li>
-                                <li><Link href="#">Portfolio</Link></li>
-                                <li><Link href="#">Press</Link></li>
-                                <li><Link href="#">Contact Us</Link></li>
+                                <li><Link href="#">{t('footer:about')} </Link></li>
+                                <li><Link href="#">{t('footer:mission')} </Link></li>
+                                <li><Link href="#">{t('footer:vision')}</Link></li>
+                                <li><Link href="#">{t('footer:executive_team')}</Link></li>
+                                <li><Link href="#">{t('footer:portfolio')}</Link></li>
+                                <li><Link href="#">{t('footer:press')}</Link></li>
+                                <li><Link href="#">{t('footer:contact_us')}</Link></li>
 
                             </ul>
                         </div>
@@ -44,23 +47,23 @@ const Footer = () => {
 
                     </div>
                     <div>
-                    <h5 className="mb-2" style={{fontFamily:"Poppins"}}>Explore</h5>
+                    <h5 className="mb-2" style={{fontFamily:"Poppins"}}>{t('footer:explore')}</h5>
                     <div className="footer-widget-menu">
                         <ul>
-                            <li><Link href="#">Hotels</Link></li>
-                            <li><Link href="#">Sanatorium</Link></li>
-                            <li><Link href="#">Wellness</Link></li>
-                            <li><Link href="#">Dine</Link></li>
-                            <li><Link href="#">Meet & Celebrate</Link></li>
-                            <li><Link href="#">Shop</Link></li>
-                            <li><Link href="#">Offers</Link></li>
+                            <li><Link href="#">{t('footer:hotels')}</Link></li>
+                            <li><Link href="#">{t('footer:sanatorium')}</Link></li>
+                            <li><Link href="#">{t('footer:wellness')}</Link></li>
+                            <li><Link href="#">{t('footer:dine')}</Link></li>
+                            <li><Link href="#">{t('footer:meet_and_celebrate')}</Link></li>
+                            <li><Link href="#">{t('footer:shop')}</Link></li>
+                            <li><Link href="#">{t('footer:offers')}</Link></li>
 
                         </ul>
                     </div>
 
                 </div>
                 <div>
-                    <h5 className=" mb-2" style={{fontFamily:"Poppins"}}>Support</h5>
+                    <h5 className=" mb-2" style={{fontFamily:"Poppins"}}>{t('footer:support')}</h5>
                     <div className="footer-widget-menu">
                         <ul>
                             <li style={{}}>
@@ -89,7 +92,7 @@ const Footer = () => {
                         {/*</ul>*/}
                     </div>
                     <div>
-                        <h5 className="mb-2" style={{fontFamily:"Poppins"}}>Connect</h5>
+                        <h5 className="mb-2" style={{fontFamily:"Poppins"}}>{t('footer:connect')}</h5>
                         <ul className="flex space-x-4">
                             <li><Link href="#"><i className="fab fa-facebook-f" style={{fontSize:"20px"}}></i></Link></li>
                             <li><Link href="#"><i className="fab fa-instagram" style={{fontSize:"20px"}}></i></Link></li>
@@ -103,7 +106,7 @@ const Footer = () => {
                             <form className="mt-4">
                                 <input
                                     type="email"
-                                    placeholder="Enter email to subscribe"
+                                    placeholder={t('footer:elevating_stays')}
                                     className="p-2 rounded text-black w-full"
                                     style={{border: "solid 1px #2c2c2d !important;"}}
                                 />
@@ -111,18 +114,18 @@ const Footer = () => {
                                     type="submit"
 
                                 >
-                                    Subscribe
+                                    {t('footer:subscribe')}
                                 </button>
                             </form>
                         </div>
                     </div>
                 </div>
                 <div className="container mx-auto mt-8 text-center">
-                <p className="text-sm mb-0" style={{fontFamily:"Poppins"}}>&copy; 2024 - Grand Chortoq Resort Hotels & Resorts. All rights reserved</p>
+                <p className="text-sm mb-0" style={{fontFamily:"Poppins"}}>&copy; {t('footer:copyright')}</p>
                 <ul className="flex justify-center space-x-4 ">
-                    <li><Link href="#" style={{fontFamily:"Poppins"}}>Terms & Conditions</Link></li>
-                    <li><Link href="#" style={{fontFamily:"Poppins"}}>Privacy Policy</Link></li>
-                    <li><Link href="#" style={{fontFamily:"Poppins"}}>Cookie preferences</Link></li>
+                    <li><Link href="#" style={{fontFamily:"Poppins"}}>{t('footer:terms_conditions')}</Link></li>
+                    <li><Link href="#" style={{fontFamily:"Poppins"}}>{t('footer:privacy_policy')}P</Link></li>
+                    <li><Link href="#" style={{fontFamily:"Poppins"}}>{t('footer:cookie_preferences')}</Link></li>
                 </ul>
             </div>
         </footer>

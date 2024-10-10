@@ -1,9 +1,13 @@
+"use client"
 import React from 'react';
+import {useTranslation} from "react-i18next";
 
 
 
 
 const Hero: React.FC = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="hero-slider owl-carousel">
             <div className="hero-area home-1 align-items-center d-flex"  style={{
@@ -37,14 +41,14 @@ const Hero: React.FC = () => {
                             </div>
 
                             <div className="hero-content">
-                                <h4>DESIGNED FOR YOU</h4>
-                                <h1>CRAFTING EXPERIENCES, CREATING MEMORIES
+                                <h4>{t('home:designed_for_you')}</h4>
+                                <h1>{t('home:crafting_experiences')}
 
                                 </h1>
 
                             </div>
                             <div className="luxury-button">
-                                <a href="/">Discover More</a>
+                                <a href="/public">{t('home:discover_more')}</a>
                             </div>
                             {/*<div className="hero-contact">*/}
                             {/*    <a href="#">*/}
