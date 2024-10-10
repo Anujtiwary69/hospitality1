@@ -2,10 +2,11 @@
 
 import Link from 'next/link';
 import React, {useState, useRef, useEffect} from 'react';
-import Script from "next/script";
+
+import $ from 'jquery';
 
 
-    const menuItems = [
+const menuItems = [
         {
             name: 'Hotels',
             link: '/hotels',
@@ -137,37 +138,28 @@ import Script from "next/script";
 
     ];
 
-
-
-
-
-// export async function getServerSideProps(context) {
-//     context.res.setHeader('Cache-Control', 'no-store, must-revalidate');
-//     return {
-//         props: {},
-//     };
-// }
-
-
 export default function Header() {
-
+    useEffect(() => {
+        // Check on page load if the class owl-carousel is missing owl-loaded and owl-drag
+        $('.owl-carousel').each(function() {
+            if (!$(this).hasClass('owl-loaded') || !$(this).hasClass('owl-drag')) {
+                $(this).addClass('owl-loaded owl-drag');
+            }
+        });
+        $('[data-cue="zoomIn"], [data-cues="zoomIn"] > *').css('opacity', '1');
+    }, []);
     return (
-
         <div className="header-area" id="sticky-header">
-            <Script
-                src="/assets/js/scrollCue.min.js"
-                strategy="lazyOnload"
-                onLoad={() => console.log('scrollCue script loaded')}
-            />
+
             <div className="container-fluid"> {/* Fixed typo here */}
                 <div className="row">
                     <div className="col-lg-2">
                         <div className="header-logo">
-                            <Link href="/home" passHref>
+                            <a href="/" >
                                 <img src="/image/logo.png" alt="Company Logo" className="w-24"
                                 />
 
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className="col-lg-8">
