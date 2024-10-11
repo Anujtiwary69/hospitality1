@@ -3,7 +3,8 @@ import React from 'react';
 import {useTranslation} from "react-i18next";
 
 export default function Wellness(){
-    const { t } = useTranslation();
+    const { t,i18n } = useTranslation();
+    const lang = "/" + i18n.language
     return (
         <div className="about-area pt-40">
             <div className="container mt-40">
@@ -38,7 +39,7 @@ export default function Wellness(){
 
                         {/*<div className="animation-bar" data-cue="zoomIn"></div>*/}
                         <div className="luxury-button" data-cue="zoomIn">
-                            <a href="/about.html">  {t('home:learn_more')}</a>
+                            <a href={`${lang}/wellness`}>  {t('home:learn_more')}</a>
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,8 @@
 a.meanmenu-reveal{display:none}
 .mean-container .mean-bar {
-  background: #C19E68;
+  background: #fff;
   float: left;
-  min-height: 60px;
+  min-height: 80px;
   padding: 4px 0 0;
   position: relative;
   width: 100%;
@@ -98,7 +98,7 @@ a.meanmenu-reveal{display:none}
 	border-radius: 0;
 }
 .mean-container a.meanmenu-reveal span {
-  background: #fff;
+  background: #1e1e1e;
 }
 .mobile-menu-area {
   background: #fff none repeat scroll 0 0;
@@ -123,12 +123,18 @@ a.meanmenu-reveal{display:none}
   background: #fff;
 }
 .mean-container .mean-bar::before {
-    color: #fff;
-    content: "Royella";
-    font-size: 28px;
-    font-weight: 600;
-    left: 10px;
-    position: absolute;
-    top: 18px;
+  color: #4c6da2;
+  font-size: 28px;
+  font-weight: 600;
+  left: 10px;
+  position: absolute;
+  top: 18px;
+  background-image: url(/image/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  width: 120px;
+  height: 60px;
+}
 }
 

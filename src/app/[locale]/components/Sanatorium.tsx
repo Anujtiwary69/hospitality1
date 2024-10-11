@@ -4,7 +4,8 @@ import React from "react";
 import {useTranslation} from "react-i18next";
 
 export default function Sanatorium(){
-    const { t } = useTranslation();
+    const { t,i18n } = useTranslation();
+    const lang = "/" + i18n.language
     return (
         <div className="about-area pt-40">
             <div className="container mt-40">
@@ -40,7 +41,7 @@ export default function Sanatorium(){
 
                         {/*<div className="animation-bar" data-cue="zoomIn"></div>*/}
                         <div className="luxury-button" data-cue="zoomIn">
-                            <a href="/sanatorium">Learn More</a>
+                            <a href={t(`${lang}/sanatorium`)}>Learn More</a>
                         </div>
                     </div>
                 </div>

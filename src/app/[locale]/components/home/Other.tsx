@@ -30,8 +30,8 @@ const offer =[
 export default function Other(){
     const { t } = useTranslation();
     return (
-        <div className="offers-area">
-            <div className="container">
+        <div className="offers-area" style={{paddingBottom:"20px"}}>
+            <div className=" container-fluid">
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="section-title two" data-cue="zoomIn">
@@ -39,11 +39,24 @@ export default function Other(){
                         </div>
                     </div>
                 </div>
-                <div className="row" data-cue="zoomIn">
-                    <div className="offers-list owl-carousel">
-                        {offer.map((f,index) => (
-                            <div className="col-md-12" key={f.name}>
-                                <div className="single-offers-box">
+                <div className="room-area home-four" style={{paddingTop:"60px",paddingBottom:"20px"}}>
+                    <div className="container-fluid">
+                        <div className="row">
+                            {offer.map((f, index) => (
+                            <div className="col-lg-3 col-md-6" key={f.name}>
+                                <div
+                                    className="single-offers-box"
+                                    data-cue="zoomIn"
+                                    data-show="true"
+                                    style={{
+                                        animationName: "zoomIn",
+                                        animationDuration: "2500ms",
+                                        animationTimingFunction: "ease",
+                                        animationDelay: "0ms",
+                                        animationDirection: "normal",
+                                        animationFillMode: "both"
+                                    }}
+                                >
                                     <div className="offers-thumb">
                                         <img src={f.image} alt=""/>
                                     </div>
@@ -51,19 +64,54 @@ export default function Other(){
                                         <a href="royella/room-details.html">{t(`home:${f.name}`)
                                         }</a>
                                         <p> {t(`home:${f.des}`)}</p>
-                                        <button style={{fontSize:"16px", fontFamily:"Poppins", fontWeight:"normal",textDecoration:"unset"}}>
+                                        <button style={{
+                                            fontSize: "16px",
+                                            fontFamily: "Poppins",
+                                            fontWeight: "normal",
+                                            textDecoration: "unset"
+                                        }}>
                                             {t(`home:${f.button}`)}
                                         </button>
                                     </div>
-                                    {/*<div className="offers-dollar">*/}
-                                    {/*    <h4>25% off</h4>*/}
-                                    {/*</div>*/}
                                 </div>
                             </div>
-                        ))}
+                            ))}
 
+
+                        </div>
                     </div>
                 </div>
+
+                {/*<div className="row" data-cue="zoomIn">*/}
+                {/*    <div className="offers-list owl-carousel">*/}
+                {/*        {offer.map((f, index) => (*/}
+                {/*            <div className="col-md-4" key={f.name}>*/}
+                {/*            <div className="single-offers-box">*/}
+                {/*                    <div className="offers-thumb">*/}
+                {/*                        <img src={f.image} alt=""/>*/}
+                {/*                    </div>*/}
+                {/*                    <div className="offers-content">*/}
+                {/*                        <a href="royella/room-details.html">{t(`home:${f.name}`)*/}
+                {/*                        }</a>*/}
+                {/*                        <p> {t(`home:${f.des}`)}</p>*/}
+                {/*                        <button style={{*/}
+                {/*                            fontSize: "16px",*/}
+                {/*                            fontFamily: "Poppins",*/}
+                {/*                            fontWeight: "normal",*/}
+                {/*                            textDecoration: "unset"*/}
+                {/*                        }}>*/}
+                {/*                            {t(`home:${f.button}`)}*/}
+                {/*                        </button>*/}
+                {/*                    </div>*/}
+                {/*                    /!*<div className="offers-dollar">*!/*/}
+                {/*                    /!*    <h4>25% off</h4>*!/*/}
+                {/*                    /!*</div>*!/*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*        ))}*/}
+
+                {/*    </div>*/}
+                {/*</div>*/}
             </div>
         </div>
 

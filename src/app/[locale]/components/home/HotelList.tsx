@@ -35,7 +35,7 @@ export default function HotelList(){
     }, [handleLanguageChanged]);
     return(
         <>
-            <div className="room-title-area">
+            <div className="room-title-area" style={{paddingTop:"30px",paddingBottom:"30px"}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 text-center">
@@ -56,40 +56,84 @@ export default function HotelList(){
                 </div>
             </div>
             {/*room-area*/}
-            <div className="room-area">
-                <div className="container">
-                    <div className="row margin-top" data-cue="zoomIn">
-                        <div className="room_list owl-carousel">
-                            {hotel.map((h,index) => (
-                            <div className="col-lg-12" key={h.name}>
-                                <div className="room-single-box">
-                                    <div className="room-thumb">
-                                        <img src={h.image} alt="" />
-                                        <div className="room-details-button">
-                                            <a href="royella/room-details.html">
-                                                {t('home:explore')}
-                                                <i className="bi bi-arrow-right" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    {/*<div className="room-pricing">*/}
-                                    {/*    <span className="dolar">$560</span>*/}
-                                    {/*    <span>Night</span>*/}
-                                    {/*</div>*/}
-                                    <div className="room-content">
-                                        <h4>{t(`home:${h.des}`)}</h4>
-                                        <a href="royella/room.html" style={{ marginBottom: h.name === "o2zoda_palace" ? "44px" : "20px" }}>{t(`home:${h.name}`)}</a>
-                                        {/*<p>1500 SQ.FT/Rooms</p>*/}
-                                    </div>
-
-                                </div>
+            <div className="container">
+            <div className="row align-items-center" style={{paddingTop:"0px",paddingBottom:"50px"}}>
+                {hotel.map((h, index) => (
+                <div className="col-lg-4 col-md-6" key={h.name}>
+                    <div
+                        className="room-single-box"
+                        data-cue="zoomIn"
+                        data-show="true"
+                        style={{
+                            animationName: "zoomIn",
+                            animationDuration: "2500ms",
+                            animationTimingFunction: "ease",
+                            animationDelay: "0ms",
+                            animationDirection: "normal",
+                            animationFillMode: "both"
+                        }}
+                    >
+                        <div className="room-thumb">
+                            <img src={h.image} alt=""/>
+                            <div className="room-details-button">
+                                <a href="room-details.html">
+                                    {t('home:explore')}
+                                    <i className="bi bi-arrow-right"/>
+                                </a>
                             </div>
-                                ))}
-
                         </div>
+                        {/*<div className="room-pricing">*/}
+                        {/*    <span className="dolar">$560</span>*/}
+                        {/*    <span>Night</span>*/}
+                        {/*</div>*/}
+                        <div className="room-content">
+                            <h4>{h.name}</h4>
+                            <a href="royella/room.html" style={{marginBottom: h.name === "o2zoda_palace" ? "44px" : "20px"}}>{t(`home:${h.name}`)}</a>
+                            {/*<p>{t(`home:${h.des}`)}</p>*/}
+                        </div>
+
                     </div>
                 </div>
+                ))}
             </div>
+            </div>
+
+
+            {/*<div className="room-area">*/}
+            {/*    <div className="container">*/}
+            {/*        <div className="row margin-top" data-cue="zoomIn">*/}
+            {/*            <div className="room_list owl-carousel">*/}
+            {/*                {hotel.map((h, index) => (*/}
+            {/*                    <div className="col-lg-12" key={h.name}>*/}
+            {/*                        <div className="room-single-box">*/}
+            {/*                            <div className="room-thumb">*/}
+            {/*                                <img src={h.image} alt=""/>*/}
+            {/*                                <div className="room-details-button">*/}
+            {/*                                    <a href="royella/room-details.html">*/}
+            {/*                                        {t('home:explore')}*/}
+            {/*                                        <i className="bi bi-arrow-right"/>*/}
+            {/*                                    </a>*/}
+            {/*                                </div>*/}
+            {/*                            </div>*/}
+            {/*                            /!*<div className="room-pricing">*!/*/}
+            {/*                            /!*    <span className="dolar">$560</span>*!/*/}
+            {/*                            /!*    <span>Night</span>*!/*/}
+            {/*                            /!*</div>*!/*/}
+            {/*                            <div className="room-content">*/}
+            {/*                                <h4>{t(`home:${h.des}`)}</h4>*/}
+            {/*                                <a href="royella/room.html"*/}
+            {/*                                   style={{marginBottom: h.name === "o2zoda_palace" ? "44px" : "20px"}}>{t(`home:${h.name}`)}</a>*/}
+            {/*                                /!*<p>1500 SQ.FT/Rooms</p>*!/*/}
+            {/*                            </div>*/}
+
+            {/*                        </div>*/}
+            {/*                    </div>*/}
+            {/*                ))}*/}
+
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </>
 
     );
