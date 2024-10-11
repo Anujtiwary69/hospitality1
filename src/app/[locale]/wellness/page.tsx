@@ -10,7 +10,7 @@ export default function Wellness() {
             <DefaultHero
                 imageName="wellness.jpg"
                 title={t('wellness:harmony_health_happiness')}
-                subTitle=""
+                subTitle={t('wellness:BeginYourTranquilJourney')}
             />
             <br/>
             <div className="room-title-area" style={{paddingBottom: '30px'}}>
@@ -89,27 +89,6 @@ export default function Wellness() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-lg-4">
-                            <div className="section-title two">
-                                <img src="/assets/images/wellness/w5.jpg" alt={t('wellness:AdventureAwaits')}/>
-                                {/*<h4 className="mt-3">{t('wellness:GoldenHours')}</h4>*/}
-                                <h1>{t('wellness:AdventureAwaits')}</h1>
-                                <p className="section-desc-2">
-                                    {t('wellness:outdoor_facilities_description')}
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="section-title two">
-                                <img src="/assets/images/wellness/w6.jpg" alt={t('wellness:welcome_boulevard')}/>
-                                {/*<h4 className="mt-3">{t('wellness:GoldenHours')}</h4>*/}
-                                <h1>{t('wellness:ActiveLiving')}</h1>
-                                <p className="section-desc-2">
-                                    {t('wellness:wakatua_club_description')}
-                                </p>
-                            </div>
-                        </div>
-
 
                     </div>
                 </div>
@@ -141,23 +120,35 @@ export default function Wellness() {
                             </div>
                         </div>
                     </div>
-                    <div className="row align-items-center">
-                        <div className="col-lg-6 col-md-12">
-                            <div className="row" data-cue="zoomIn">
-                                <div className="about_list owl-carousel">
-                                    <div className="col-md-12">
-                                        <div className="about-thumb">
-                                            <img
-                                                src='/assets/images/wellness/w8.jpg'
-                                                alt={t('wellness:chortoq_club_house')}
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
+
+                </div>
+            </div>
+            <section>
+                <div className="container mt-60">
+                    <div className="row">
+                        <div className="col-lg-4">
+                            <div className="section-title two">
+                                <img src="/assets/images/wellness/w5.jpg" alt={t('wellness:AdventureAwaits')}/>
+                                <h4 className="mt-3">{t('wellness:outdoor_facilities')}</h4>
+                                <h1>{t('wellness:AdventureAwaits')}</h1>
+                                <p className="section-desc-2">
+                                    {t('wellness:outdoor_facilities_description')}
+                                </p>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-12 upper">
-                            <div className="section-title two" data-cue="zoomIn">
+                        <div className="col-lg-4">
+                            <div className="section-title two">
+                                <img src="/assets/images/wellness/w6.jpg" alt={t('wellness:welcome_boulevard')}/>
+                                <h4 className="mt-3">{t('wellness:GoldenHours')}</h4>
+                                <h1>{t('wellness:wakatua_club')}</h1>
+                                <p className="section-desc-2">
+                                    {t('wellness:wakatua_club_description')}
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="section-title two">
+                                <img src="/assets/images/wellness/w8.jpg" alt={t('wellness:welcome_boulevard')}/>
                                 <h4>{t('wellness:PowerYourPotential')}</h4>
                                 <h1>{t('wellness:energy_fitness_club')}</h1>
                                 <p className="section-desc-2">
@@ -165,8 +156,13 @@ export default function Wellness() {
                                 </p>
                             </div>
                         </div>
-
                     </div>
+                </div>
+            </section>
+            <div className="about-area pt-40">
+                <div className="container mt-40">
+
+
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-12 upper">
                             <div className="section-title two" data-cue="zoomIn">
@@ -179,7 +175,7 @@ export default function Wellness() {
                         </div>
                         <div className="col-lg-6 col-md-12">
                             <div className="row" data-cue="zoomIn">
-                            <div className="about_list owl-carousel">
+                                <div className="about_list owl-carousel">
                                     <div className="col-md-12">
                                         <div className="about-thumb">
                                             <img
