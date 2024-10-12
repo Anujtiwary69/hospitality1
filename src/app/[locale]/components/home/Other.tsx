@@ -6,29 +6,34 @@ const offer =[
         name:"dine",
         des:"savor_moments",
         image:"/assets/images/other/dine.jpg",
-        button:"learn_more"
+        button:"learn_more",
+        link:"/dine"
     },
     {
         name:"meet",
         des:"where_ideas_connect",
         image:"/assets/images/other/meet.jpg",
-        button:"learn_more"
+        button:"learn_more",
+        link:"/meet"
     },
     {
         name:"celebrate",
         des:"where_memories_made",
         image:"/assets/images/other/celebrate.jpg",
-        button:"learn_more"
+        button:"learn_more",
+        link:"/meet"
     },
     {
         name:"shop",
         des:"curated_for_you",
         image:"/assets/images/other/shop.jpg",
-        button:"shop_now"
+        button:"shop_now",
+        link:"/shop"
     }
 ]
 export default function Other(){
-    const { t } = useTranslation();
+    const { t ,i18n} = useTranslation();
+    const lang = "/" + i18n.language
     return (
         <div className="offers-area" style={{paddingBottom:"20px"}}>
             <div className=" container-fluid">
@@ -61,17 +66,19 @@ export default function Other(){
                                         <img src={f.image} alt=""/>
                                     </div>
                                     <div className="offers-content">
-                                        <a href="royella/room-details.html">{t(`home:${f.name}`)
-                                        }</a>
+                                        <h4>{t(`home:${f.name}`)
+                                        }</h4>
                                         <p> {t(`home:${f.des}`)}</p>
-                                        <button style={{
+                                        <a
+                                            href={lang + f.link}
+                                            style={{
                                             fontSize: "16px",
                                             fontFamily: "Poppins",
                                             fontWeight: "normal",
-                                            textDecoration: "unset"
+
                                         }}>
                                             {t(`home:${f.button}`)}
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

@@ -35,11 +35,11 @@ export default function HotelList(){
     }, [handleLanguageChanged]);
     return(
         <>
-            <div className="room-title-area" style={{paddingTop:"30px",paddingBottom:"30px"}}>
+            <div className="room-title-area align-items-center" style={{paddingTop:"30px",paddingBottom:"30px"}}>
                 <div className="container">
-                    <div className="row">
+                    <div className="row align-items-center">
                         <div className="col-md-12 text-center">
-                            <div className="section-title center" data-cue="zoomIn">
+                            <div className="section-title center" data-cue="zoomIn" style={{width:'100%'}}>
                                 <div className="section-thumb">
                                     {/*<img*/}
                                     {/*    src="/assets/images/home-1/section-shape1.png"*/}
@@ -87,7 +87,7 @@ export default function HotelList(){
                         {/*    <span>Night</span>*/}
                         {/*</div>*/}
                         <div className="room-content">
-                            <h4>{h.name}</h4>
+                            <h4>{t(`home:${h.des}`)}</h4>
                             <a href="royella/room.html" style={{marginBottom: h.name === "o2zoda_palace" ? "44px" : "20px"}}>{t(`home:${h.name}`)}</a>
                             {/*<p>{t(`home:${h.des}`)}</p>*/}
                         </div>
