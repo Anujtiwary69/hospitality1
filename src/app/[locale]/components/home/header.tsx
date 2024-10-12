@@ -141,7 +141,7 @@ const menuItems = [
     },
     {
         name: "Offers",
-        link: "#",
+        link: "/offers",
     }
 
 ];
@@ -289,8 +289,8 @@ export default function Header() {
                             </div>
                         </div>
                         <div className="col-lg-2 col-lg-2 d-flex align-items-center">
-                            <div className="header-button text-right">
-                                <Link href="royella/find-room.html">Book Now</Link>
+                            <div className="header-button text-right" >
+                                <Link href="#" style={{fontSize: i18n.language === "en" ? "16px" : "12px"}}>{t('home:book_now')}</Link>
                             </div>
                             <LanguageChanger/>
                         </div>
