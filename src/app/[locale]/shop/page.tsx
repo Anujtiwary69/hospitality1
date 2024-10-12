@@ -2,6 +2,7 @@
 import DefaultHero from "@/app/[locale]/components/DefaultHero";
 import React from "react";
 import {useTranslation} from "react-i18next";
+import BookingForm from "@/app/[locale]/components/home/BookingForm";
 
 export default function Shop() {
     const {t} = useTranslation();
@@ -12,6 +13,7 @@ export default function Shop() {
                 title={t('shop:shop_discover_enjoy_subtitle')}
                 subTitle={t('shop:shop_discover_enjoy_title')}
             />
+            <BookingForm/>
             <br/>
             <div className="room-title-area" >
                 <div className="container">

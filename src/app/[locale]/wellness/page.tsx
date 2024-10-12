@@ -2,6 +2,7 @@
 import {useTranslation} from "react-i18next";
 import DefaultHero from "@/app/[locale]/components/DefaultHero";
 import React from "react";
+import BookingForm from "@/app/[locale]/components/home/BookingForm";
 
 export default function Wellness() {
     const {t} = useTranslation();
@@ -12,6 +13,7 @@ export default function Wellness() {
                 title={t('wellness:harmony_health_happiness')}
                 subTitle={t('wellness:BeginYourTranquilJourney')}
             />
+            <BookingForm/>
             <br/>
             <div className="room-title-area">
                 <div className="container">

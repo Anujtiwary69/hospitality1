@@ -2,6 +2,7 @@
 import DefaultHero from "@/app/[locale]/components/DefaultHero";
 import React from "react";
 import {useTranslation} from "react-i18next";
+import BookingForm from "@/app/[locale]/components/home/BookingForm";
 
 export default function Offers() {
     const {t} = useTranslation();
@@ -12,6 +13,7 @@ export default function Offers() {
                 title={t('offers:unlock_unforgettable_experiences_subtitle')}
                 subTitle={t('offers:unlock_unforgettable_experiences_title')}
             />
+            <BookingForm/>
             <br/>
             <div className="room-title-area" >
                 <div className="container">

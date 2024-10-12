@@ -2,6 +2,7 @@
 import DefaultHero from "@/app/[locale]/components/DefaultHero";
 import React from "react";
 import {useTranslation} from "react-i18next";
+import BookingForm from "@/app/[locale]/components/home/BookingForm";
 
 export default function Meet() {
     const {t} = useTranslation();
@@ -12,6 +13,7 @@ export default function Meet() {
                 title={t('meet:meet_celebrate_subtitle')}
                 subTitle={t('meet:meet_celebrate_title')}
             />
+            <BookingForm/>
             <br/>
             <div className="room-title-area" >
                 <div className="container">

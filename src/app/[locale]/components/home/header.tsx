@@ -121,11 +121,11 @@ const menuItems = [
         //
         // ],
     },
-    {
-        name: 'Celebrate',
-        link: '/meet',
-
-    },
+    // {
+    //     name: 'Celebrate',
+    //     link: '/meet',
+    //
+    // },
     {
         name: 'Shop',
         link: '/shop',

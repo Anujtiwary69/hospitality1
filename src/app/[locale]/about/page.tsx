@@ -3,6 +3,7 @@ import DefaultHero from "@/app/[locale]/components/DefaultHero";
 import React, {useEffect} from "react";
 import {useTranslation} from "react-i18next";
 import { usePathname, useSearchParams } from 'next/navigation';
+import BookingForm from "@/app/[locale]/components/home/BookingForm";
 
 export default function About() {
     const {t} = useTranslation();
@@ -70,9 +71,10 @@ export default function About() {
         <>
             <DefaultHero
                 imageName="about.png"
-                title={t('about:About')}
-                subTitle=""
+                title={t('about:OURSTORY')}
+                subTitle={t('about:HospitalityRooted')}
             />
+            <BookingForm/>
             <br/>
             <div className="room-title-area">
                 <div className="container">
@@ -177,10 +179,10 @@ export default function About() {
                         </div>
                         <div className="col-lg-12 text-center">
                             <div className="section-title two center container">
-                                <h2>{t('about:about_chortoq_hospitality_title')}</h2>
-                                {/*<h4>{t('about:exclusive_about_subtitle')}</h4>*/}
-                                <p>{t('about:about_chortoq_hospitality_description')}</p>
-                                <p>{t('about:about_chortoq_hospitality_details')}</p>
+                                <h2>{t('about:portfolio_title')}</h2>
+                                <h4>{t('about:portfolio_description')}</h4>
+                                <p>{t('about:portfolio_details')}</p>
+                                {/*<p>{t('about:about_chortoq_hospitality_details')}</p>*/}
                             </div>
                         </div>
                     </div>

@@ -2,6 +2,7 @@
 import DefaultHero from "@/app/[locale]/components/DefaultHero";
 import React from "react";
 import {useTranslation} from "react-i18next";
+import BookingForm from "@/app/[locale]/components/home/BookingForm";
 
 export default function Contact() {
     const {t} = useTranslation();
@@ -10,8 +11,9 @@ export default function Contact() {
             <DefaultHero
                 imageName="contact.png"
                 title={t('press:questions_get_in_touch')}
-                subTitle={t('press:questions_get_in_touch')}
+                subTitle={t('press:questions_title')}
             />
+            <BookingForm/>
             <br/>
             {/*<div className="room-title-area">*/}
             {/*    <div className="container">*/}
@@ -115,6 +117,23 @@ export default function Contact() {
                                 </div>
                             </form>
                             <div id="status"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="google-map">
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="">
+                            <iframe
+                                src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=%207,%20Namunaviy%20street,%20Muchum%20SHFY,%20Sohibkor%20MFY,%20Chartak%20area,%20Namangan%20district,%20Uzbekistan+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                                width={1920}
+                                height={520}
+                                style={{border: 0}}
+
+                                aria-hidden="false"
+                                tabIndex={0}
+                            />
                         </div>
                     </div>
                 </div>
