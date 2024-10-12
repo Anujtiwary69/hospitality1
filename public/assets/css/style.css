@@ -598,6 +598,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #fff;
     padding: 60px 0 335px;
     margin-top: -71px;
+    padding-bottom: 30px;
 }
 
 /*room-area*/
@@ -844,6 +845,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /*All-section-title*/
 .section-title {
     margin-bottom: 40px;
+    width: 70%;
 }
 
 .section-title.center{

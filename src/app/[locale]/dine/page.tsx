@@ -13,11 +13,11 @@ export default function Dine(){
                 subTitle={t('dine:dining_title')}
             />
             <br/>
-            <div className="room-title-area" style={{paddingBottom: '30px'}}>
+            <div className="room-title-area" >
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12 text-center">
-                            <div className="section-title two center container" style={{width: "70%"}}>
+                            <div className="section-title two center container" >
                                 <h2>{t('dine:dining_section_title')}</h2>
                                 <h4>{t('dine:dining_description')}</h4>
                                 <p>{t('dine:dining_intro')}</p>

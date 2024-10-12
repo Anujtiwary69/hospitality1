@@ -3,6 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import DefaultHero from "@/app/[locale]/components/DefaultHero";
+import BookingForm from "@/app/[locale]/components/home/BookingForm";
 
 // Define the structure of each section
 interface SectionType {
@@ -26,12 +27,13 @@ const Sanatorium = () => {
                 title={t('sanatorium:sanatorium.hero.title')}
                 subTitle={t('sanatorium:sanatorium.hero.subTitle')}
             />
+            <BookingForm/>
             <br />
-            <div className="room-title-area" style={{ paddingBottom: '30px' }}>
+            <div className="room-title-area" >
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12 text-center">
-                            <div className="section-title two center container" style={{ width: "70%" }}>
+                            <div className="section-title two center container" >
                                 <h2>{t('sanatorium:sanatorium.intro.mainTitle')}</h2>
                                 <h4>{t('sanatorium:sanatorium.intro.subTitle')}</h4>
                                 <p>{t('sanatorium:sanatorium.intro.description1')}</p>

@@ -109,35 +109,35 @@ const menuItems = [
     },
     {
         name: 'Meet',
-        link: '#',
-        submenu: [
-            {name: 'Alpha Board Room', link: '/meetings'},
-            {name: 'Chortoq 1 - Conference Hall', link: '/events'},
-            {name: 'Chortoq 2 - Meeting Room', link: '/conferences'},
-            {name: 'Chortoq 3 - Meeting Room', link: '/conferences'},
-            {name: 'Beta Meeting Room', link: '/conferences'},
-            {name: 'Zeta Meeting Room', link: '/conferences'},
-            {name: 'Lota Meeting Room', link: '/conferences'},
-
-        ],
+        link: '/meet',
+        // submenu: [
+        //     {name: 'Alpha Board Room', link: '/meetings'},
+        //     {name: 'Chortoq 1 - Conference Hall', link: '/events'},
+        //     {name: 'Chortoq 2 - Meeting Room', link: '/conferences'},
+        //     {name: 'Chortoq 3 - Meeting Room', link: '/conferences'},
+        //     {name: 'Beta Meeting Room', link: '/conferences'},
+        //     {name: 'Zeta Meeting Room', link: '/conferences'},
+        //     {name: 'Lota Meeting Room', link: '/conferences'},
+        //
+        // ],
     },
     {
         name: 'Celebrate',
-        link: '#',
+        link: '/meet',
 
     },
     {
         name: 'Shop',
-        link: '#',
-        submenu: [
-            {name: 'Gift Vouchers', link: '/boutique'},
-            {name: 'Caprice Boutique', link: '/grocery'},
-            {name: 'Tailor ', link: '/pharmacy'},
-            {name: 'Ladies Salon ', link: '/pharmacy'},
-            {name: 'Deli Shop ', link: '/pharmacy'},
-            {name: 'Chortoq Organic Grocery ', link: '/pharmacy'},
-            {name: 'Chortoq Pharmacy', link: '/pharmacy'},
-        ],
+        link: '/shop',
+        // submenu: [
+        //     {name: 'Gift Vouchers', link: '/boutique'},
+        //     {name: 'Caprice Boutique', link: '/grocery'},
+        //     {name: 'Tailor ', link: '/pharmacy'},
+        //     {name: 'Ladies Salon ', link: '/pharmacy'},
+        //     {name: 'Deli Shop ', link: '/pharmacy'},
+        //     {name: 'Chortoq Organic Grocery ', link: '/pharmacy'},
+        //     {name: 'Chortoq Pharmacy', link: '/pharmacy'},
+        // ],
     },
     {
         name: "Offers",

@@ -13,11 +13,11 @@ export default function Wellness() {
                 subTitle={t('wellness:BeginYourTranquilJourney')}
             />
             <br/>
-            <div className="room-title-area" style={{paddingBottom: '30px'}}>
+            <div className="room-title-area">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12 text-center">
-                            <div className="section-title two center container" style={{width: "70%"}}>
+                            <div className="section-title two center container" >
                                 <h2>{t('wellness:wellness')}</h2>
                                 <h4>{t('wellness:wellness_journey')}</h4>
                                 <p>{t('wellness:wellness_description')}</p>

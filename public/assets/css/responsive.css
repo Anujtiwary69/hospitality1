@@ -3348,6 +3348,9 @@ p.room-detils-desc {
  .header-area {
     display: none;
 }
+.booking-area{
+    position: relative !important;
+}
 
 .hero-area {
     height: 600px;
@@ -4419,6 +4422,19 @@ p.room-detils-desc {
    .header-area {
     display: none;
 }
+    .booking-area{
+        position: relative !important;
+    }
+    .booking-input-box:before{
+        position: relative;
+    }
+    .booking-input-box{
+        text-align: center;
+    }
+    .booking-button{
+        position: relative;
+        right: -14% !important;
+    }
 
 .hero-area {
     height: 600px;
@@ -4536,8 +4552,12 @@ p.section-desc-1 {
 
 p.section-desc-2 {
     width: 100%;
-    text-align: justify;
+    /*text-align: justify;*/
 }
+.section-title{
+    width: 100%;
+}
+
 
 .single-feature-box::before {
     left: 0;

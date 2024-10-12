@@ -8,7 +8,8 @@ import { faFacebookF, faInstagram, faLinkedinIn, faYoutube, faWeibo, faWeixin } 
 import {useTranslation} from "react-i18next";
 
 const Footer = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const lang = "/" + i18n.language
     return (
         <footer className=" text-white py-8" style={{backgroundColor:'#355a97 !important;'}}>
             <div className="container">
@@ -51,11 +52,11 @@ const Footer = () => {
                     <div className="footer-widget-menu">
                         <ul>
                             <li><Link href="#">{t('footer:hotels')}</Link></li>
-                            <li><Link href="#">{t('footer:sanatorium')}</Link></li>
-                            <li><Link href="#">{t('footer:wellness')}</Link></li>
-                            <li><Link href="#">{t('footer:dine')}</Link></li>
-                            <li><Link href="#">{t('footer:meet_and_celebrate')}</Link></li>
-                            <li><Link href="#">{t('footer:shop')}</Link></li>
+                            <li><Link href={t(`${lang}/sanatorium`)}>{t('footer:sanatorium')}</Link></li>
+                            <li><Link href={t(`${lang}/wellness`)}>{t('footer:wellness')}</Link></li>
+                            <li><Link href={t(`${lang}/dine`)}>{t('footer:dine')}</Link></li>
+                            <li><Link href={t(`${lang}/meet`)}>{t('footer:meet_and_celebrate')}</Link></li>
+                            <li><Link href={t(`${lang}/shop`)}>{t('footer:shop')}</Link></li>
                             <li><Link href="#">{t('footer:offers')}</Link></li>
 
                         </ul>
@@ -106,7 +107,7 @@ const Footer = () => {
                             <form className="mt-4">
                                 <input
                                     type="email"
-                                    placeholder={t('footer:elevating_stays')}
+                                    placeholder={t('footer:subscribe_prompt')}
                                     className="p-2 rounded text-black w-full"
                                     style={{border: "solid 1px #2c2c2d !important;"}}
                                 />
