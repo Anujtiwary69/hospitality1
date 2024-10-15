@@ -196,7 +196,7 @@ export default function Header() {
     return (
         <>
 
-            <div className="header-area" id="sticky-header">
+            <div className="header-area" id="sticky-header" style={{position:'absolute',width:'100%',zIndex:'999'}}>
 
                 <div className="container-fluid"> {/* Fixed typo here */}
                     <div className="row">

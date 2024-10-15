@@ -7970,6 +7970,114 @@ a.dark-logo {
     font-family: "Poppins", sans-serif;
 }
 
+.video-background-holder {
+    /*margin-top: 80px;*/
+    background-color: black;
+    height: calc(100vh - 10px);
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-background-holder video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.video-background-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Large desktops and laptops */
+@media only screen and (max-width: 1200px) {
+    .video-background-holder {
+        height: 60vh;
+    }
+
+    .video-background-content {
+        font-size: 2rem; /* Slightly reduce font size */
+    }
+}
+
+/* Tablets (Portrait and Landscape) */
+@media only screen and (max-width: 992px) {
+    .video-background-holder {
+        height: 50vh;
+    }
+
+    .video-background-holder video {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-background-content {
+        font-size: 1.5rem; /* Reduce font size for tablet */
+        padding: 15px;
+    }
+}
+
+/* Small Tablets and Large Phones (Portrait) */
+@media only screen and (max-width: 768px) {
+    .video-background-holder {
+        height: 50vh;
+    }
+
+    .video-background-holder video {
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        transform: none; /* Remove transform to center the video */
+    }
+
+    .video-background-content {
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+}
+
+/* Mobile Phones (Portrait) */
+@media only screen and (max-width: 576px) {
+    .video-background-holder {
+        height: 50vh; /* Reduce height further for mobile */
+    }
+
+    .video-background-holder video {
+        width: 100%;
+        height: auto;
+        min-width: auto;
+        min-height: auto;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .video-background-content {
+        font-size: 1rem; /* Further reduce font size */
+        padding: 5px;
+    }
+}
 .style-two .single-input-box input::placeholder{
     color: #acacac;
 }

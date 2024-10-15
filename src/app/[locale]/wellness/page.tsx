@@ -55,6 +55,36 @@ export default function Wellness() {
                             </div>
                         </div>
                     </div>
+                    <div className="row align-items-center">
+
+                        <div className="col-lg-6 col-md-12">
+                            <div className="row" data-cue="zoomIn">
+                                <div className="about_list owl-carousel">
+                                    <div className="col-md-12">
+                                        <div className="about-thumb">
+                                            <img
+                                                src='/assets/images/wellness/w-new.jpg'
+                                                alt={t('wellness:chortoq_club_house')}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-12 upper">
+                            <div className="section-title two" data-cue="zoomIn">
+                                <h4>{t('wellness:ChortoqEquestrian_subtitle')}</h4>
+                                <h1>{t('wellness:ChortoqEquestrian_title')}</h1>
+                                <p className="section-desc-2">
+                                    {t('wellness:ChortoqEquestrian_des')}
+                                </p>
+                                <div className="luxury-button" data-cue="zoomIn" >
+                                    <a href="https://chortoqgrandresort.com/"> Learn More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <section>
