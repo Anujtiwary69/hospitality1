@@ -4425,6 +4425,22 @@ p.room-detils-desc {
     .booking-area{
         position: relative !important;
     }
+    #heroContentData{
+        display: none;
+    }
+    .videoContentForMObile{
+        display: block;
+    }
+    .video-background-holder{
+        height: 300px;
+        margin-top: -16px;
+    }
+    .luxury-button .hero_button{
+        display: none;
+    }
+    .header-Hero{
+        height: 39vh;
+    }
     .booking-input-box:before{
         position: relative;
     }
@@ -4433,7 +4449,7 @@ p.room-detils-desc {
     }
     .booking-button{
         position: relative;
-        right: -14% !important;
+        right: -10% !important;
     }
 
 .hero-area {

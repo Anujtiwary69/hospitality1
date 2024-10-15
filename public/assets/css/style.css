@@ -7969,17 +7969,120 @@ a.dark-logo {
     padding: 0 21px;
     font-family: "Poppins", sans-serif;
 }
+.videoContentForMObile{
+    display: none;
+}
 
 .video-background-holder {
     /*margin-top: 80px;*/
-    background-color: black;
+    background-color: white;
     height: calc(100vh - 10px);
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
+.header-Hero {
+    position: relative;
+    background-color: white;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
 
+.header-Hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.header-Hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.header-Hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+/*@media (pointer: coarse) and (hover: none) {*/
+/*    .header-Hero {*/
+/*        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;*/
+/*    }*/
+
+/*    .header-Hero video {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+@media only screen and (max-width: 1400px) {
+    .header-Hero {
+        height: 71vh; /* Adjust the height for tablets */
+
+    }
+    .booking-button button{
+        width: 180px;
+    }
+    .booking-button{
+        right: -75% !important;
+    }
+
+}
+/* Tablet Screens */
+@media only screen and (max-width: 1044px) {
+    .header-Hero {
+        height: 56vh; /* Adjust the height for tablets */
+    }
+    .booking-button{
+        right: -75% !important;
+    }
+    .booking-button button{
+        width: 180px;
+    }
+}
+
+/* Large Mobile Screens */
+@media only screen and (max-width: 768px) {
+    .header-Hero {
+        height: 56vh; /* Adjust the height for large mobile screens */
+    }
+    .booking-button{
+        right: -75% !important;
+    }
+    .booking-button button{
+        width: 180px;
+    }
+}
+
+/* Small Mobile Screens */
+@media only screen and (max-width: 480px) {
+    .header-Hero {
+        height: 60vh; /* Adjust the height for small mobile screens */
+    }
+    .booking-button button{
+        width: 245px !important;
+    }
+}
 .video-background-holder video {
     position: absolute;
     top: 50%;
@@ -8009,75 +8112,7 @@ a.dark-logo {
     padding: 20px;
 }
 
-/* Large desktops and laptops */
-@media only screen and (max-width: 1200px) {
-    .video-background-holder {
-        height: 60vh;
-    }
 
-    .video-background-content {
-        font-size: 2rem; /* Slightly reduce font size */
-    }
-}
-
-/* Tablets (Portrait and Landscape) */
-@media only screen and (max-width: 992px) {
-    .video-background-holder {
-        height: 50vh;
-    }
-
-    .video-background-holder video {
-        width: 100%;
-        height: auto;
-    }
-
-    .video-background-content {
-        font-size: 1.5rem; /* Reduce font size for tablet */
-        padding: 15px;
-    }
-}
-
-/* Small Tablets and Large Phones (Portrait) */
-@media only screen and (max-width: 768px) {
-    .video-background-holder {
-        height: 50vh;
-    }
-
-    .video-background-holder video {
-        width: 100%;
-        height: auto;
-        top: 0;
-        left: 0;
-        transform: none; /* Remove transform to center the video */
-    }
-
-    .video-background-content {
-        font-size: 1.3rem;
-        padding: 10px;
-    }
-}
-
-/* Mobile Phones (Portrait) */
-@media only screen and (max-width: 576px) {
-    .video-background-holder {
-        height: 50vh; /* Reduce height further for mobile */
-    }
-
-    .video-background-holder video {
-        width: 100%;
-        height: auto;
-        min-width: auto;
-        min-height: auto;
-        top: 0;
-        left: 0;
-        transform: none;
-    }
-
-    .video-background-content {
-        font-size: 1rem; /* Further reduce font size */
-        padding: 5px;
-    }
-}
 .style-two .single-input-box input::placeholder{
     color: #acacac;
 }
