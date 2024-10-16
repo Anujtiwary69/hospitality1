@@ -79,7 +79,7 @@ export default function Wellness() {
                                     {t('wellness:ChortoqEquestrian_des')}
                                 </p>
                                 <div className="luxury-button" data-cue="zoomIn" >
-                                    <a href="https://chortoqgrandresort.com/"> Learn More</a>
+                                    <a href="https://chortoqgrandresort.com/" target="_blank"> Learn More</a>
                                 </div>
 
                             </div>

@@ -117,7 +117,7 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="row align-items-center" id="vision">
+                    <div className="row align-items-center" id="vission">
                         <div className="col-lg-6 col-md-12">
                             <div className="row" data-cue="zoomIn">
                                 <div className="about_list owl-carousel" >
