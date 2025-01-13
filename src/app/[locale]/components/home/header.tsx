@@ -252,7 +252,7 @@ export default function Header() {
                                                         menuItem.name === 'Hotels' ? (
                                                             hotels.map((subItem, subIndex) => (
                                                                 <li key={subItem.name + subIndex}>
-                                                                    <Link href={lang + subItem.link}>
+                                                                    <Link href={subItem.link}>
                                                                         {t(`${subItem.name}`)}
                                                                     </Link>
                                                                 </li>
