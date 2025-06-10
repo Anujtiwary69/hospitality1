@@ -6,17 +6,20 @@ const hotel= [
     {
         name: "grand_chortoq_resort",
         des:"nature_healing_paradise",
-        image:"/assets/images/hotels/GRAND.jpg"
+        image:"/assets/images/hotels/GRAND.jpg",
+        link:"https://gcr-amber.vercel.app/en/"
     },
     {
         name: "chortoq_boutique_hotel",
         des:"chic_modern_vibrant",
-        image:"/assets/images/hotels/BOUTIQUE.jpg"
+        image:"/assets/images/hotels/BOUTIQUE.jpg",
+        link:"https://cbh-theta.vercel.app/en/"
     },
     {
         name: "o2zoda_palace",
         des:"serene_mountain_escape",
-        image:"/assets/images/hotels/O2ZODA.jpg"
+        image:"/assets/images/hotels/O2ZODA.jpg",
+        link:"/"
     }
 ]
 export default function HotelList(){
@@ -35,9 +38,9 @@ export default function HotelList(){
     }, [handleLanguageChanged]);
     return(
         <>
-            <div className="room-title-area align-items-center" style={{paddingTop:"30px",paddingBottom:"30px"}}>
+            <div className="room-title-area align-items-center" style={{paddingTop:"30px",paddingBottom:"30px"}} >
                 <div className="container">
-                    <div className="row align-items-center">
+                    <div className="row align-items-center" id="hotelListing">
                         <div className="col-md-12 text-center">
                             <div className="section-title center" data-cue="zoomIn" style={{width:'100%'}}>
                                 <div className="section-thumb">
@@ -56,7 +59,7 @@ export default function HotelList(){
                 </div>
             </div>
             {/*room-area*/}
-            <div className="container">
+            <div className="container" >
             <div className="row align-items-center" style={{paddingTop:"0px",paddingBottom:"50px"}}>
                 {hotel.map((h, index) => (
                 <div className="col-lg-4 col-md-6" key={h.name}>
@@ -76,7 +79,7 @@ export default function HotelList(){
                         <div className="room-thumb">
                             <img src={h.image} alt=""/>
                             <div className="room-details-button">
-                                <a href="room-details.html">
+                                <a href={h.link}>
                                     {t('home:explore')}
                                     <i className="bi bi-arrow-right"/>
                                 </a>
@@ -88,7 +91,7 @@ export default function HotelList(){
                         {/*</div>*/}
                         <div className="room-content">
                             <h4>{t(`home:${h.des}`)}</h4>
-                            <a href="royella/room.html" style={{marginBottom: h.name === "o2zoda_palace" ? "44px" : "20px"}}>{t(`home:${h.name}`)}</a>
+                            <a href={h.link} style={{marginBottom: h.name === "o2zoda_palace" ? "44px" : "20px"}}>{t(`home:${h.name}`)}</a>
                             {/*<p>{t(`home:${h.des}`)}</p>*/}
                         </div>
 

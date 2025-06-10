@@ -1,9 +1,9 @@
 export default function PrivacyPolicy(){
     return(
-        <div className="room-title-area" >
+        <div className="room-title-area mt-2 pt-5">
             <div className="container">
                 <div className="row ">
-                  <div className="col-lg-12">
+                  <div className="col-lg-12 mt-5">
                       <>
                           <h1 className="text-center mt-60 mb-40">Privacy Policy</h1>
                           <p>Last updated: October 12, 2024</p>

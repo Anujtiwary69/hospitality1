@@ -3,7 +3,9 @@ import React, {useEffect, useState} from 'react';
 import {useTranslation} from "react-i18next";
 
 export default function About() {
-    const { t } = useTranslation();
+
+    const { t, i18n } = useTranslation();
+    const lang = "/" + i18n.language
     return (
         <div className="about-area pt-40">
             <div className="container mt-40">
@@ -21,7 +23,7 @@ export default function About() {
 
                         {/*<div className="animation-bar" data-cue="zoomIn"></div>*/}
                         <div className="luxury-button" data-cue="zoomIn">
-                            <a href="/about.html"> {t('home:learn_more')}</a>
+                            <a href={`${lang}/about`}> {t('home:learn_more')}</a>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12">

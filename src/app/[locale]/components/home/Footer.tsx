@@ -74,13 +74,13 @@ const Footer = () => {
                     <h5 className="mb-2" style={{fontFamily:"Poppins"}}>{t('footer:explore')}</h5>
                     <div className="footer-widget-menu">
                         <ul>
-                            <li><a href="#">{t('footer:hotels')}</a></li>
+                            <li><a href="/#hotelListing">{t('footer:hotels')}</a></li>
                             <li><a href={t(`${lang}/sanatorium`)}>{t('footer:sanatorium')}</a></li>
                             <li><a href={t(`${lang}/wellness`)}>{t('footer:wellness')}</a></li>
                             <li><a href={t(`${lang}/dine`)}>{t('footer:dine')}</a></li>
                             <li><a href={t(`${lang}/meet`)}>{t('footer:meet_and_celebrate')}</a></li>
                             <li><a href={t(`${lang}/shop`)}>{t('footer:shop')}</a></li>
-                            <li><a href="#">{t('footer:offers')}</a></li>
+                            <li><a href={t(`${lang}/offers`)}>{t('footer:offers')}</a></li>
 
                         </ul>
                     </div>

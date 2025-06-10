@@ -5,7 +5,8 @@ import styles from './HeroBanner.module.css';
 
 
 export default function Hero() {
-    const {t} = useTranslation()
+    const { t, i18n } = useTranslation();
+    const lang = "/" + i18n.language
     return (
         <div className="header-Hero">
             <div className="overlay" />
@@ -28,7 +29,7 @@ export default function Hero() {
                         <h4>{t('home:designed_for_you')}</h4>
                         <h1>{t('home:crafting_experiences')}</h1>
                         <div className="luxury-button">
-                            <a href="/" className="hero_button">{t('home:discover_more')}</a>
+                            <a href={`${lang}/about`} className="hero_button">{t('home:discover_more')}</a>
                         </div>
 
                     </div>
